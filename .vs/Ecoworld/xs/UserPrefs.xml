@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{F2E888E6-8F5D-21AF-E154-106CDCB21124}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/MainMenu/LobbyManager.cs">
+    <Files>
+      <File FileName="Assets/Script/MainMenu/LobbyManager.cs" Line="99" Column="36" />
+      <File FileName="Assets/Script/OpenWolrd/SceneManager/SettingsManager.cs" Line="35" Column="39" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Ecoworld" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Script" expanded="True">
+                <Node name="MainMenu" expanded="True">
+                  <Node name="LobbyManager.cs" selected="True" />
+                </Node>
+                <Node name="OpenWolrd" expanded="True">
+                  <Node name="SceneManager" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ecdb6140-e30f-4c35-9292-cd1e51dfe9dd" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

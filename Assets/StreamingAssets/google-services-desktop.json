@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "292704897447",
+    "firebase_url": "https://ecoworld-d2bbc.firebaseio.com",
+    "project_id": "ecoworld-d2bbc",
+    "storage_bucket": "ecoworld-d2bbc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292704897447:android:1c25863537306e50a10e82",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.Ecoworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292704897447-t497nms9jent2gg0elniuh3cr7p224kc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrXo2cMbXMD4z7rI00mNBagdjp0SNcEtA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292704897447-t497nms9jent2gg0elniuh3cr7p224kc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "292704897447-srp5hknltp30ott96ohjvb08l7db46qb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.DefaultCompany.Ecoworld"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
