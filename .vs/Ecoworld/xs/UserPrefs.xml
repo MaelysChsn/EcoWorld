@@ -1,19 +1,24 @@
 ﻿<Properties StartupConfiguration="{F2E888E6-8F5D-21AF-E154-106CDCB21124}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/MainMenu/LobbyManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/JSONFile/Quests.json">
     <Files>
-      <File FileName="Assets/Script/MainMenu/LobbyManager.cs" Line="99" Column="36" />
-      <File FileName="Assets/Script/OpenWolrd/SceneManager/SettingsManager.cs" Line="35" Column="39" />
+      <File FileName="Assets/Script/OpenWolrd/Quêtes/QuestManager.cs" Line="52" Column="2" />
+      <File FileName="Assets/Script/OpenWolrd/Quêtes/QuestManager.cs" Line="21" Column="2" />
+      <File FileName="Assets/Script/OpenWolrd/Quêtes/QuestJSON.cs" Line="33" Column="6" />
+      <File FileName="Assets/Resources/JSONFile/Quests.json" Line="18" Column="64" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Ecoworld" expanded="True">
             <Node name="Assets" expanded="True">
+              <Node name="Resources" expanded="True" />
               <Node name="Script" expanded="True">
-                <Node name="MainMenu" expanded="True">
-                  <Node name="LobbyManager.cs" selected="True" />
-                </Node>
+                <Node name="MainMenu" expanded="True" />
                 <Node name="OpenWolrd" expanded="True">
+                  <Node name="Inventory" expanded="True" />
+                  <Node name="Quêtes" expanded="True">
+                    <Node name="QuestJSONController.cs" selected="True" />
+                  </Node>
                   <Node name="SceneManager" expanded="True" />
                 </Node>
               </Node>
@@ -23,10 +28,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ecdb6140-e30f-4c35-9292-cd1e51dfe9dd" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="89c50c08-fd5f-4c85-8348-b1f4605d614a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

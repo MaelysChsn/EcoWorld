@@ -9,6 +9,7 @@ public class SettingsManager : MonoBehaviourPunCallbacks
 {
     public GameObject inventoryObject;
     public GameObject menuPause;
+    public GameObject menuQuest;
     public static bool GameIsPaused;
 
     public void OpenInventory()
@@ -34,6 +35,15 @@ public class SettingsManager : MonoBehaviourPunCallbacks
             {
                 Time.timeScale = 1.0f;
             }
+        }
+    }
+
+    public void OpenQuest()
+    {
+        bool isOpen = menuQuest.activeSelf;
+        if (menuQuest)
+        {
+            menuQuest.SetActive(!isOpen);
         }
     }
 

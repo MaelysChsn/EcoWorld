@@ -96,6 +96,7 @@
     <Compile Include="Assets/Photon/Simple/Utilities/GhostWorld/GhostComponent.cs" />
     <Compile Include="Assets/Photon/PhotonUtilities/PackObject/PackObjectSettings.cs" />
     <Compile Include="Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs" />
+    <Compile Include="Assets/Script/OpenWolrd/Quêtes/QuestJSONController.cs" />
     <Compile Include="Assets/Photon/Simple/Components/SyncState/StateChangeInfo.cs" />
     <Compile Include="Assets/Photon/Simple/Components/ContactSystems/SyncVitals/UI/VitalUIBase.cs" />
     <Compile Include="Assets/Photon/Simple/Components/ContactSystems/Structs/ContactEvent.cs" />
@@ -119,6 +120,7 @@
     <Compile Include="Assets/Photon/Simple/Utilities/Example/BasicController.cs" />
     <Compile Include="Assets/Photon/PhotonUtilities/PackObject/CodeGen/GenerateTypeExtension.cs" />
     <Compile Include="Assets/Photon/Simple/Core/TickEngineSettings.cs" />
+    <Compile Include="Assets/Script/OpenWolrd/Quêtes/Quests.cs" />
     <Compile Include="Assets/Photon/Simple/Components/ContactSystems/Interfaces/IContactTrigger.cs" />
     <Compile Include="Assets/Photon/Simple/Components/ContactSystems/SyncShoot/SyncCannon.cs" />
     <Compile Include="Assets/Script/OpenWolrd/player/PlayerMouvement.cs" />
@@ -141,6 +143,7 @@
     <Compile Include="Assets/Photon/Simple/Components/SyncAnimator/Enums/ParameterEnums.cs" />
     <Compile Include="Assets/Script/OpenWolrd/player/CharacterManager.cs" />
     <Compile Include="Assets/Photon/Simple/Utilities/Networking/Interfaces/IHasNetworkID.cs" />
+    <Compile Include="Assets/Script/OpenWolrd/player/CameraMiniMap.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" />
     <Compile Include="Assets/Photon/Simple/Components/ContactSystems/SyncInventory/InventoryContactReactors.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
@@ -353,7 +356,7 @@
     <Compile Include="Assets/Photon/Simple/Core/GenericHitscan/HitscanComponent.cs" />
     <Compile Include="Assets/Photon/Simple/Components/SyncState/Enums/ObjState.cs" />
     <Compile Include="Assets/Photon/Simple/Utilities/GhostWorld/HauntedStatic.cs" />
-    <Compile Include="Assets/Script/OpenWolrd/player/CameraMiniMap.cs" />
+    <Compile Include="Assets/Script/OpenWolrd/Quêtes/QuestManager.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
@@ -372,6 +375,10 @@
      <None Include="Assets/Photon/Simple/changelog-simple.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets/UI assets/AlignedGames/Polygonal Foliage Asset Package/Shaders/Diffuse.shader" />
+     <None Include="Assets/JsonDotNet/link.xml" />
+     <None Include="Assets/JsonDotNet/Assemblies/Windows/Newtonsoft.Json.XML" />
+     <None Include="Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.XML" />
+     <None Include="Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll" />
      <None Include="Assets/Photon/PhotonUtilities/Compression/plugins/ByteConverter.xml" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
      <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
@@ -387,9 +394,12 @@
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
      <None Include="Assets/Photon/PhotonUnityNetworking/readme.txt" />
      <None Include="Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll" />
+     <None Include="Assets/JsonDotNet/Assemblies/AOT/Newtonsoft.Json.dll" />
+     <None Include="Assets/JsonDotNet/Assemblies/AOT/Newtonsoft.Json.XML" />
      <None Include="Assets/Photon/PhotonLibs/Photon3Unity3D.dll" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
      <None Include="Assets/Photon/PhotonLibs/Metro/Photon3Unity3D.dll" />
+     <None Include="Assets/JsonDotNet/Assemblies/Windows/Newtonsoft.Json.dll" />
      <None Include="Assets/Photon/PhotonUtilities/TransformCrusher/plugins/FloatCrusher.xml" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets/Photon/PhotonUtilities/TransformCrusher/plugins/HalFloat.dll" />
@@ -590,6 +600,9 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>/Applications/Unity/Hub/Editor/2020.1.5f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="FloatCrusher">
       <HintPath>Assets/Photon/PhotonUtilities/TransformCrusher/plugins/FloatCrusher.dll</HintPath>

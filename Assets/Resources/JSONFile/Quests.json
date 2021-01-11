@@ -1,0 +1,53 @@
+﻿{
+    "id": 0,
+    "questName": "Les plantes",
+    "description": "Récupérez tout les déchets près de la rivière",
+    "NpcQuest": "0",
+    "Dialogue":
+    {
+        "Begin": [
+            "J'ai besoin de créer de nouvelles potions mais je n'ai plus de plantes",
+            "Il me faut vraiment ces petites plantes pour aidé les habitants du villag!",
+            "Pense tu être assez fort pour me ramener mes plantes ?"
+        ],
+        "NotComplete": [
+            "Tu ne m'a pas rapporter tout ce que j'avais demandé, il te reste encore du chemin à parcourir !"
+
+        ],
+        "Complete": [
+            "Bravo tu as réussit à me rapporter mes précieuse plantes ! Tu as le droit a une belle récompence"
+        ]
+
+    },
+    "reward": {
+        "experience": 500,
+        "stellas": 10
+    },
+    "goals":
+    {
+        "talkTo": "Botaniste",
+        "items": [
+            {
+                "id": 10,
+                "name": "Luzere",
+                "amount": 5
+            },
+            {
+                "id": 11,
+                "name": "Trèfles",
+                "amount": 7
+            },
+            {
+                "id": 12,
+                "name": "Sainfoin",
+                "amount": 3
+            }
+        ]
+    },
+    "state":
+    {
+        "complete": false,
+        "loading": false
+    }
+}
+    
