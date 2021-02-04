@@ -10,30 +10,40 @@ public class LevelManager : MonoBehaviour
     TMP_Text scoreText;
     TMP_Text levelText;
 
+    TMP_Text stellasText;
+
     public int level;
 
     public void Start()
     {
         levelText = GameObject.Find("Level").transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         scoreText = GameObject.Find("Score").GetComponent<TextMeshProUGUI>();
-        slider = GetComponent<Slider>();
+        stellasText = GameObject.Find("Stellas").GetComponent<TextMeshProUGUI>();
 
+        slider = GetComponent<Slider>();
         scoreText.text = slider.value.ToString() + "/2000";
     }
 
-    public void SetPoints(int points)
+    public void SetExp(int points)
     {
-        if (slider.value < 2000)
+        if ((slider.value + points) < 2000)
         {
             slider.value += points;
             scoreText.text = slider.value.ToString() + "/2000";
         }
-        else if (slider.value > 2000)
+        else if ((slider.value + points) > 2000)
         {
+            Debug.Log("level plus de 2000");
             LevelUp();
             slider.value = points - (slider.maxValue - slider.value);
             scoreText.text = slider.value.ToString() + "/2000";
         }
+    }
+
+    public void SetStellas(int stellas)
+    {
+        stellasText.text += stellas.ToString();
+
     }
 
     public void LevelUp()

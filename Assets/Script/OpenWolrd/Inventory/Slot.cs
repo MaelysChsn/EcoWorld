@@ -18,19 +18,20 @@ public class Slot : MonoBehaviour
 
     public Button removeButton;
     public Inventory inventory;
+    LevelManager level;
 
     public void Awake()
     {
         Instance = this;
+        inventory = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<Inventory>();
+        level = GameObject.Find("LevelBar").GetComponent<LevelManager>();
+
     }
 
-    private void Start()
+    public void CustomStart()
     {
         defaultSprite = GetComponent<Image>().sprite;
         amountText = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
-
-        inventory = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<Inventory>();
-
     }
 
     private void Update()
@@ -72,8 +73,10 @@ public class Slot : MonoBehaviour
         {
             removeButton.interactable = true;
             idItem = slotsItem.poubelleID;
+            Debug.Log("slot id " + slotsItem.itemID + " amount " + slotsItem.amountInStack);
             removeButton.onClick.AddListener(() => {
-                inventory.RemoveItem(slotsItem.itemID, slotsItem.amountInStack, IdPoubelle, idItem);
+                inventory.RemoveItem(slotsItem.itemID, slotsItem.amountInStack);
+                level.SetExp(1200);
             });
         }
         else

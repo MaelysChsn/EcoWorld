@@ -19,3 +19,5 @@ public class QuestManager : MonoBehaviour
         questDictionary.Add(newQuest.idQuest, newQuest);
     }
 }
+
+

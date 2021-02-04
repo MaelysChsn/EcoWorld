@@ -16,9 +16,9 @@ public class Quest
     [System.Serializable]
     public class Dialogue
     {
-        public string[] Begin;
-        public string[] NotComplete;
-        public string[] Complete;
+        public string[] begin;
+        public string[] notComplete;
+        public string[] complete;
     }
 
     [System.Serializable]
@@ -40,7 +40,9 @@ public class Quest
     {
         public int id;
         public string name;
-        public int amount;
+        public string sprite;
+        public int requiredAmount;
+        public int currentAmount;
     }
 
     [System.Serializable]

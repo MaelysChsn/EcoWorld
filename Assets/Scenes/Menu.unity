@@ -184,6 +184,7 @@ GameObject:
   - component: {fileID: 23399201}
   - component: {fileID: 23399203}
   - component: {fileID: 23399202}
+  - component: {fileID: 23399204}
   m_Layer: 5
   m_Name: LobbyManager
   m_TagString: Untagged
@@ -244,6 +245,14 @@ MonoBehaviour:
   buttonExit: {fileID: 1624938127}
   menuCharacterSelector: {fileID: 91773264}
   menuChargement: {fileID: 662482769}
+--- !u!222 &23399204
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23399200}
+  m_CullTransparentMesh: 0
 --- !u!1 &78141565
 GameObject:
   m_ObjectHideFlags: 0
@@ -3565,9 +3574,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1740117041}
-        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: PlaySolo
+      - m_Target: {fileID: 23399203}
+        m_TargetAssemblyTypeName: LobbyManager, Assembly-CSharp
+        m_MethodName: SoloCreateRoom
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

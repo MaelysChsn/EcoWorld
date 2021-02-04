@@ -2,25 +2,23 @@
     "id": 0,
     "questName": "Les plantes",
     "description": "Récupérez tout les déchets près de la rivière",
-    "NpcQuest": "0",
-    "Dialogue":
+    "npcQuest": "0",
+    "dialogue":
     {
-        "Begin": [
+        "begin": [
             "J'ai besoin de créer de nouvelles potions mais je n'ai plus de plantes",
-            "Il me faut vraiment ces petites plantes pour aidé les habitants du villag!",
+            "Il me faut vraiment ces petites plantes pour aidé les habitants du village !",
             "Pense tu être assez fort pour me ramener mes plantes ?"
         ],
-        "NotComplete": [
+        "notComplete": [
             "Tu ne m'a pas rapporter tout ce que j'avais demandé, il te reste encore du chemin à parcourir !"
-
         ],
-        "Complete": [
+        "complete": [
             "Bravo tu as réussit à me rapporter mes précieuse plantes ! Tu as le droit a une belle récompence"
         ]
-
     },
     "reward": {
-        "experience": 500,
+        "experience": 1400,
         "stellas": 10
     },
     "goals":
@@ -30,17 +28,23 @@
             {
                 "id": 10,
                 "name": "Luzere",
-                "amount": 5
+                "sprite": "Sprite/Shop",
+                "requiredAmount": 5,
+                "currentAmount": 0
             },
             {
                 "id": 11,
                 "name": "Trèfles",
-                "amount": 7
+                "sprite": "Sprite/Plus",
+                "requiredAmount": 7,
+                "currentAmount": 0
             },
             {
                 "id": 12,
                 "name": "Sainfoin",
-                "amount": 3
+                "sprite": "Sprite/Cancel",
+                "requiredAmount": 3,
+                "currentAmount": 0
             }
         ]
     },

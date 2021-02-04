@@ -45,13 +45,34 @@ public class LobbyManager : MonoBehaviourPunCallbacks//extension de la classe mo
         PhotonNetwork.JoinRandomRoom();
     }
 
+    public void SoloCreateRoom()
+    {
+        
+        int randomRoomName = Random.Range(0, 100000);
+        RoomOptions roomOptions = new RoomOptions()
+        {
+            IsVisible = true,
+            IsOpen = true,
+            MaxPlayers = 1
+        };
+        PhotonNetwork.CreateRoom("Partie" + randomRoomName, roomOptions);
+        Debug.Log("Partie crée ! Commencez votre jeux solo");
+
+        menuCharacterSelector.SetActive(true);
+        menuMain.SetActive(false);
+        findRoomButton.SetActive(false);
+        buttonExit.SetActive(false);
+    }
+
     public override void OnJoinRandomFailed(short returnCode, string message)
     {
         Debug.Log("La recherche de partie a échoué. Creation d'une nouvelle partie !");
-        CreateRoom();
+        MultiCreateRoom();
     }
 
-    void CreateRoom()
+    
+
+    void MultiCreateRoom()
     {
         int randomRoomName = Random.Range(0, 100000);
         RoomOptions roomOptions = new RoomOptions() {
@@ -66,7 +87,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks//extension de la classe mo
     public override void OnCreateRoomFailed(short returnCode, string message)
     {
         Debug.Log("La création de partie a échoué. Il doit déjà y avoir de partie avec le même nom.");
-        CreateRoom();
+        MultiCreateRoom();
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)

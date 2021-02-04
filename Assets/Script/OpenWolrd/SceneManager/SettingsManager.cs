@@ -27,14 +27,6 @@ public class SettingsManager : MonoBehaviourPunCallbacks
         if (menuPause)
         {
             menuPause.SetActive(!isOpen);
-            if(isOpen == true)
-            {
-                Time.timeScale = 0f;
-            }
-            else
-            {
-                Time.timeScale = 1.0f;
-            }
         }
     }
 

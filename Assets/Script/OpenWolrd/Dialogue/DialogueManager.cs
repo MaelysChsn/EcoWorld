@@ -48,10 +48,10 @@ public class DialogueManager : MonoBehaviour
         MainCamera = MainCamera.GetComponent<Camera>();
     }
 
-    public void AddNewDialogue(string[] lines, string npcName)
+    public void AddNewDialogue(List<string> lines, string npcName)
     {
         dialogueIndex = 0;
-        dialogueLines = new List<string>(lines.Length);
+        dialogueLines = new List<string>(lines.Capacity);
         dialogueLines.AddRange(lines);
 
         foreach(string line in lines)

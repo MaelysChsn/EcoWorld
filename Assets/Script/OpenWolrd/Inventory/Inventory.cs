@@ -11,11 +11,29 @@ public class Inventory : MonoBehaviour
     public Slot[] slots;
     public Button removeItem;
 
-    LevelManager level;
+    private Quest quest;
+    private List<GoalsUI> goalui;
+    public int questID;
+    public int itemCount = 0;
+
+
 
     public void Start()
     {
-        level = GameObject.Find("LevelBar").GetComponent<LevelManager>();
+        questID = GameObject.Find("Villagois").GetComponent<NPC>().questId;
+        goalui = GameObject.Find("QuestManager").GetComponent<QuestJSONController>().goalsUi;
+        foreach (Slot i in slots)
+        {
+            i.CustomStart();
+        }
+    }
+
+    public void Update()
+    {
+        foreach (Slot i in slots)
+        {
+            i.CheckForItem();
+        }
     }
 
     public void OpenInventory(bool toggleState)
@@ -36,6 +54,8 @@ public class Inventory : MonoBehaviour
         List<Item> stackableItems = new List<Item>();
         List<Slot> emptySlots = new List<Slot>();
 
+        QuestGoal(QuestManager.instance.questDictionary[questID], itemtoAdd.itemID, itemtoAdd.amountInStack);
+
         if (startingItem && startingItem.itemID == itemtoAdd.itemID && startingItem.amountInStack < startingItem.maxStackSize)
         {
             stackableItems.Add(startingItem);
@@ -43,7 +63,6 @@ public class Inventory : MonoBehaviour
 
         foreach(Slot i in slots)
         {
-
             if (i.slotsItem)
             {
                 Item a = i.slotsItem;
@@ -82,7 +101,41 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void RemoveItem(int id, int amountToRemove, string IdPoubelle, string IdItem)
+    public void QuestGoal(Quest quest, int itemId, int amountInStack)
+    {
+        foreach(Quest.Items item in quest.goals.items)
+        {
+            if (itemId == item.id)
+            {
+                item.currentAmount += amountInStack;
+                UpdateUi(itemId, item.currentAmount);
+            }
+            if (item.currentAmount == item.requiredAmount)
+            {
+                itemCount++;
+                Debug.Log(itemCount);
+            }
+        }
+
+        if (itemCount == quest.goals.items.Length)
+        {
+            quest.state.complete = true;
+        }
+    }
+
+    public void UpdateUi(int itemId, int itemCurrentAmount)
+    {
+        foreach (GoalsUI goal in goalui)
+        {
+            if (goal.id == itemId.ToString())
+            {
+                goal.currentAmount = itemCurrentAmount.ToString();
+                QuestJSONController.instance.GoalsUi();
+            }
+        }
+    }
+
+    public void RemoveItem(int id, int amountToRemove)
     {
         foreach (Slot i in slots)
         {
@@ -100,8 +153,6 @@ public class Inventory : MonoBehaviour
                     {
                         Destroy(a.gameObject);
                         amountToRemove -= amountCanRemove;
-
-                        level.SetPoints(1200);
                     }
                     else
                     {

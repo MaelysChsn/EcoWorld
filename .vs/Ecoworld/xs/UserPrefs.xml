@@ -1,25 +1,28 @@
 ﻿<Properties StartupConfiguration="{F2E888E6-8F5D-21AF-E154-106CDCB21124}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/JSONFile/Quests.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/OpenWolrd/Quêtes/ChestManager.cs">
     <Files>
-      <File FileName="Assets/Script/OpenWolrd/Quêtes/QuestManager.cs" Line="52" Column="2" />
-      <File FileName="Assets/Script/OpenWolrd/Quêtes/QuestManager.cs" Line="21" Column="2" />
-      <File FileName="Assets/Script/OpenWolrd/Quêtes/QuestJSON.cs" Line="33" Column="6" />
-      <File FileName="Assets/Resources/JSONFile/Quests.json" Line="18" Column="64" />
+      <File FileName="Assets/Script/OpenWolrd/Quêtes/Quests.cs" Line="28" Column="28" IsPinned="True" />
+      <File FileName="Assets/Script/OpenWolrd/Inventory/Slot.cs" IsPinned="True" />
+      <File FileName="Assets/Script/OpenWolrd/SceneManager/SettingsManager.cs" Line="1" Column="1" IsPinned="True" />
+      <File FileName="Assets/Script/OpenWolrd/Dialogue/NPC.cs" Line="115" Column="10" />
+      <File FileName="Assets/Script/OpenWolrd/Inventory/Inventory.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/MainMenu/LobbyManager.cs" Line="62" Column="35" />
+      <File FileName="Assets/Script/OpenWolrd/Quêtes/Villager.cs" Line="34" Column="6" />
+      <File FileName="Assets/Resources/JSONFile/Quests.json" Line="48" Column="14" NotebookId="1" />
+      <File FileName="Assets/Script/OpenWolrd/Quêtes/QuestJSONController.cs" NotebookId="1" />
+      <File FileName="Assets/Script/OpenWolrd/Quêtes/QuestManager.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/Script/OpenWolrd/Quêtes/ChestManager.cs" Line="12" Column="45" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Ecoworld" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Resources" expanded="True" />
               <Node name="Script" expanded="True">
-                <Node name="MainMenu" expanded="True" />
                 <Node name="OpenWolrd" expanded="True">
-                  <Node name="Inventory" expanded="True" />
                   <Node name="Quêtes" expanded="True">
-                    <Node name="QuestJSONController.cs" selected="True" />
+                    <Node name="ChestManager.cs" selected="True" />
                   </Node>
-                  <Node name="SceneManager" expanded="True" />
                 </Node>
               </Node>
             </Node>
@@ -30,9 +33,11 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="89c50c08-fd5f-4c85-8348-b1f4605d614a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b7a287fb-1977-4653-a938-6e75ecd2199e" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/Maelys/Documents/GitHub/EcoWorld/Ecoworld/Assets/Script/OpenWolrd/Quêtes/QuestJSONController.cs" relfile="Assets/Script/OpenWolrd/Quêtes/QuestJSONController.cs" line="39" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
