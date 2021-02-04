@@ -25,7 +25,6 @@ public class Slot : MonoBehaviour
         Instance = this;
         inventory = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<Inventory>();
         level = GameObject.Find("LevelBar").GetComponent<LevelManager>();
-
     }
 
     public void CustomStart()
@@ -37,7 +36,6 @@ public class Slot : MonoBehaviour
     private void Update()
     {
         CheckForItem();
-
     }
 
     public void CheckForItem()

@@ -31,7 +31,6 @@ public class CharacterManager : MonoBehaviour
 
         PlayerPrefs.SetInt("masterCharacter", masterCharacter);
         Debug.Log("joueur selectionnée master :" + masterCharacter);
-
         PhotonNetwork.LoadLevel("OpenWorld");
     }
 }

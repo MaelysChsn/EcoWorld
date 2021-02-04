@@ -25,45 +25,55 @@ public class PhotonManager : MonoBehaviourPun
 
     public void SpawnPlayer()
     {
-        int player = 0;
-        if (!PhotonNetwork.IsMasterClient)
-        {
-            player = 1;
-        }
-
         int masterCharacter = PlayerPrefs.GetInt("masterCharacter");
+        int player = 0;
 
-        switch (masterCharacter)
+        if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
         {
-            case 1:
-                clientCharacter = 0;
-                break;
-            case 0:
-                clientCharacter = 1;
-                break;
-            default:
-                break;
+            
+            if (!PhotonNetwork.IsMasterClient)
+            {
+                player = 1;
+            }
+
+            switch (masterCharacter)
+            {
+                case 1:
+                    clientCharacter = 0;
+                    break;
+                case 0:
+                    clientCharacter = 1;
+                    break;
+                default:
+                    break;
+            }
+
+
+            GameObject masterprefab = character[masterCharacter];
+            GameObject clientprefab = character[clientCharacter];
+            //choix des avatar
+            if (player == 1)
+            {
+                GameObject Player = PhotonNetwork.Instantiate(clientprefab.name, SpawnPoints[player].transform.position, Quaternion.identity);
+                playerFollow.SetCameraTarget(Player.transform);
+                playerMinimap.SetMiniMapTarget(Player.transform);
+            }
+            else
+            {
+                GameObject Player = PhotonNetwork.Instantiate(masterprefab.name, SpawnPoints[player].transform.position, Quaternion.identity);
+                playerFollow.SetCameraTarget(Player.transform);
+                playerMinimap.SetMiniMapTarget(Player.transform);
+
+            }
         }
-
-
-        GameObject masterprefab = character[masterCharacter];
-        GameObject clientprefab = character[clientCharacter];
-        Debug.Log(masterCharacter);
-        Debug.Log(clientCharacter);
-        //choix des avatar
-        if (player == 1)
+        else if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
         {
-            GameObject Player = PhotonNetwork.Instantiate(clientprefab.name, SpawnPoints[player].transform.position, Quaternion.identity);
-            playerFollow.SetCameraTarget(Player.transform);
-            playerMinimap.SetMiniMapTarget(Player.transform);
-        }
-        else
-        {
+            GameObject masterprefab = character[masterCharacter];
             GameObject Player = PhotonNetwork.Instantiate(masterprefab.name, SpawnPoints[player].transform.position, Quaternion.identity);
             playerFollow.SetCameraTarget(Player.transform);
             playerMinimap.SetMiniMapTarget(Player.transform);
-
         }
+        
 
 
     }
