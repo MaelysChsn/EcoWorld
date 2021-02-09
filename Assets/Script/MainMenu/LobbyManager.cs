@@ -58,6 +58,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks//extension de la classe mo
         PhotonNetwork.CreateRoom("Partie" + randomRoomName, roomOptions);
         Debug.Log("Partie crée ! Commencez votre jeux solo");
 
+        Debug.Log(PhotonNetwork.CurrentRoom.PlayerCount);
         menuCharacterSelector.SetActive(true);
         menuMain.SetActive(false);
         findRoomButton.SetActive(false);

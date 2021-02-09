@@ -11,21 +11,21 @@ public class PoubelleManager : MonoBehaviour
 
     
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            Debug.Log("colision poubelle");
-            Slot.Instance.GetIdPoubelle(idPoubelle);
-        }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.gameObject.tag == "Player")
+    //    {
+    //        Debug.Log("colision poubelle");
+    //        Slot.Instance.GetIdPoubelle(idPoubelle);
+    //    }
 
-    }
+    //}
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            Debug.Log("sortie colision poubelle");
-        }
-    }
+    //private void OnTriggerExit(Collider other)
+    //{
+    //    if (other.gameObject.tag == "Player")
+    //    {
+    //        Debug.Log("sortie colision poubelle");
+    //    }
+    //}
 }

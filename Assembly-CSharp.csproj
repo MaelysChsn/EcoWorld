@@ -106,6 +106,7 @@
     <Compile Include="Assets/Photon/Simple/Example/Scripts/LowFrameRate.cs" />
     <Compile Include="Assets/Photon/Simple/Utilities/Camera/AutoZoom.cs" />
     <Compile Include="Assets/Photon/PhotonUtilities/EditorTools/SolidTextures.cs" />
+    <Compile Include="Assets/Script/OpenWolrd/Inventory/Container/ContainerPlayerInventory.cs" />
     <Compile Include="Assets/Photon/Simple/Utilities/GhostWorld/GhostCollider.cs" />
     <Compile Include="Assets/Photon/Simple/Components/ContactSystems/Interfaces/IContactReactor.cs" />
     <Compile Include="Assets/Photon/PhotonUtilities/TransformCrusher/WorldBounds/WorldBounds.cs" />
@@ -129,6 +130,7 @@
     <Compile Include="Assets/Photon/Simple/Utilities/GUITools/ShowIfInterfaceAttribute.cs" />
     <Compile Include="Assets/Photon/Simple/Components/ContactSystems/SyncVitals/VitalsContactReactor.cs" />
     <Compile Include="Assets/Photon/Simple/Utilities/Networking/NetworkHit.cs" />
+    <Compile Include="Assets/Script/OpenWolrd/Quêtes/Villager.cs" />
     <Compile Include="Assets/Photon/Simple/Components/SyncOculus/Assistants/OculusAssist.cs" />
     <Compile Include="Assets/Photon/Simple/Utilities/Collider/CollideType.cs" />
     <Compile Include="Assets/Photon/Simple/Utilities/Networking/AutoDestroyUnspawned.cs" />
@@ -156,6 +158,7 @@
     <Compile Include="Assets/Photon/PhotonUtilities/EditorTools/VersaMaskDrawer.cs" />
     <Compile Include="Assets/Photon/Simple/Components/SyncOculus/SimpleOVRDebug.cs" />
     <Compile Include="Assets/Photon/PhotonUtilities/PackObject/CodeGen/TypeInfoDict.cs" />
+    <Compile Include="Assets/Script/OpenWolrd/Inventory/Chest.cs" />
     <Compile Include="Assets/Photon/PhotonUtilities/PackObject/Attributes/PackObjectAttribute.cs" />
     <Compile Include="Assets/Photon/Simple/Components/ContactSystems/Interfaces/IOnContactEvent.cs" />
     <Compile Include="Assets/Photon/Simple/Core/NetMaster/Interfaces/NetMasterInterfaces.cs" />
@@ -207,6 +210,7 @@
     <Compile Include="Assets/Photon/Simple/Utilities/GhostWorld/Interfaces/IIncludeInGhost.cs" />
     <Compile Include="Assets/Photon/PhotonUtilities/TransformCrusher/Structs/MatrixRB.cs" />
     <Compile Include="Assets/Photon/Simple/Components/ContactSystems/SyncVitals/Assistants/VitalsAssists.cs" />
+    <Compile Include="Assets/Script/OpenWolrd/Inventory/Container/Container.cs" />
     <Compile Include="Assets/Photon/Simple/Core/Extensions/NetObjColliderExt.cs" />
     <Compile Include="Assets/Photon/Simple/Utilities/GhostWorld/Haunted.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" />
@@ -236,6 +240,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ObjectSpin.cs" />
     <Compile Include="Assets/Photon/Simple/Components/Assistants/AssistHelpers.cs" />
     <Compile Include="Assets/Photon/Simple/Core/Interfaces/NetObjInterfaces.cs" />
+    <Compile Include="Assets/Script/OpenWolrd/Quêtes/ChestManager.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" />
     <Compile Include="Assets/Photon/Simple/Example/Scripts/SimulateHealth.cs" />
     <Compile Include="Assets/Photon/Simple/Components/ContactSystems/SyncVitals/Enums/ConsumptionEnums.cs" />
@@ -248,6 +253,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" />
     <Compile Include="Assets/Photon/Simple/Components/SyncMover/SyncAdditiveMover.cs" />
     <Compile Include="Assets/Photon/PhotonLibs/WebSocket/SocketWebTcp.cs" />
+    <Compile Include="Assets/Script/OpenWolrd/Inventory/ItemStack.cs" />
     <Compile Include="Assets/UI assets/Joystick Pack/Scripts/Joysticks/DynamicJoystick.cs" />
     <Compile Include="Assets/Photon/PhotonUtilities/PackObject/Attributes/SyncHalfFloatAttribute.cs" />
     <Compile Include="Assets/Script/MainMenu/LobbyManager.cs" />
@@ -257,6 +263,7 @@
     <Compile Include="Assets/Photon/PhotonChat/Demos/DemoChat/FriendItem.cs" />
     <Compile Include="Assets/UI assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs" />
     <Compile Include="Assets/Photon/Simple/Core/NetObject.cs" />
+    <Compile Include="Assets/Script/OpenWolrd/Inventory/DraggedItemStack.cs" />
     <Compile Include="Assets/Photon/Simple/Components/DataMonitor/SimpleDataMonitor.cs" />
     <Compile Include="Assets/Photon/Simple/Components/Assistants/LauncherAssists.cs" />
     <Compile Include="Assets/Photon/PhotonUtilities/PackObject/Attributes/SyncListAttribute.cs" />
@@ -268,7 +275,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets/Photon/PhotonUtilities/PackObject/CodeGen/TypeInfo.cs" />
     <Compile Include="Assets/Script/OpenWolrd/Inventory/Item.cs" />
-    <Compile Include="Assets/Script/OpenWolrd/Inventory/Slot.cs" />
+    <Compile Include="Assets/Script/OpenWolrd/Inventory/Container/Slot.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_B.cs" />
     <Compile Include="Assets/Photon/Simple/Core/Structs/FrameBase.cs" />
@@ -317,6 +324,7 @@
     <Compile Include="Assets/Photon/Simple/Components/Mount/MountMaskSelector.cs" />
     <Compile Include="Assets/Photon/Simple/Components/ContactSystems/SyncInventory/BasicInventory.cs" />
     <Compile Include="Assets/Photon/PhotonUtilities/PackObject/Attributes/SyncRangedAttribute.cs" />
+    <Compile Include="Assets/Script/OpenWolrd/player/PlayerInventory.cs" />
     <Compile Include="Assets/Photon/Simple/Core/NetMaster/DoubleTime.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets/Photon/Simple/Components/ContactSystems/SyncShoot/Interfaces/IProjectileCannon.cs" />
@@ -342,6 +350,7 @@
     <Compile Include="Assets/Photon/PhotonUtilities/EditorTools/DrawerUtils.cs" />
     <Compile Include="Assets/Photon/Simple/Core/GenericHitscan/HitscanDefinition.cs" />
     <Compile Include="Assets/Photon/Simple/Components/SyncMover/SyncMoverBase.cs" />
+    <Compile Include="Assets/Script/OpenWolrd/Inventory/InventoryManager.cs" />
     <Compile Include="Assets/Photon/Simple/Components/ContactSystems/SyncVitals/VitalsSystem/DataTypes/VitalDefinition.cs" />
     <Compile Include="Assets/Photon/PhotonLibs/WebSocket/WebSocket.cs" />
     <Compile Include="Assets/UI assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs" />
@@ -357,8 +366,7 @@
     <Compile Include="Assets/Photon/Simple/Core/GenericHitscan/HitscanComponent.cs" />
     <Compile Include="Assets/Photon/Simple/Components/SyncState/Enums/ObjState.cs" />
     <Compile Include="Assets/Photon/Simple/Utilities/GhostWorld/HauntedStatic.cs" />
-    <Compile Include="Assets/Script/OpenWolrd/Quêtes/Villager.cs" />
-    <Compile Include="Assets/Script/OpenWolrd/Quêtes/ChestManager.cs" />
+    <Compile Include="Assets/Script/OpenWolrd/Inventory/Container/ContainerChest.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

@@ -20,7 +20,7 @@ public class Villager : MonoBehaviour
         {
             player = other.gameObject;
             npc = this.gameObject;
-            dialogue.Add("Récupère les trucs dans le coffres frérot!");
+            dialogue.Add("Récupère les trucs dans le coffre frérot!");
             if (dialogue.Count != 0)
             {
                 DialogueManager.Instance.CameraPlayer(npc, player);

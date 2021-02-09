@@ -4,164 +4,93 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Inventory : MonoBehaviour
+public class Inventory
 {
-    public GameObject inventoryObject;
+    private List<ItemStack> inventoryContents = new List<ItemStack>();
 
-    public Slot[] slots;
-    public Button removeItem;
-
-    private Quest quest;
-    private List<GoalsUI> goalui;
-    public int questID;
-    public int itemCount = 0;
-
-
-
-    public void Start()
+    public Inventory(int size)
     {
-        questID = GameObject.Find("Villagois").GetComponent<NPC>().questId;
-        goalui = GameObject.Find("QuestManager").GetComponent<QuestJSONController>().goalsUi;
-        foreach (Slot i in slots)
+        for (int i = 0; i < size; i++)
         {
-            i.CustomStart();
+            inventoryContents.Add(new ItemStack(i));
         }
     }
 
-    public void Update()
+    public bool addItem(ItemStack input)
     {
-        foreach (Slot i in slots)
+        foreach (ItemStack stack in inventoryContents)
         {
-            i.CheckForItem();
-        }
-    }
-
-    public void OpenInventory(bool toggleState)
-    {
-        if (toggleState == true)
-        {
-            inventoryObject.SetActive(true);
-        }
-        else
-        {
-            inventoryObject.SetActive(false);
-        }
-    }
-    
-    public void AddItem(Item itemtoAdd, Item startingItem = null)
-    {
-        int amountInStack = itemtoAdd.amountInStack;
-        List<Item> stackableItems = new List<Item>();
-        List<Slot> emptySlots = new List<Slot>();
-
-        QuestGoal(QuestManager.instance.questDictionary[questID], itemtoAdd.itemID, itemtoAdd.amountInStack);
-
-        if (startingItem && startingItem.itemID == itemtoAdd.itemID && startingItem.amountInStack < startingItem.maxStackSize)
-        {
-            stackableItems.Add(startingItem);
-        }
-
-        foreach(Slot i in slots)
-        {
-            if (i.slotsItem)
+            if (stack.isEmpty()) //itemStack n'a pas d'item
             {
-                Item a = i.slotsItem;
-                if (a.itemID == itemtoAdd.itemID && a.amountInStack < a.maxStackSize && a != startingItem)
+                stack.setStack(input);
+                return true;
+            }
+            else //itemsatck a un item
+            {
+                if (ItemStack.areItemsEqual(input, stack))
                 {
-                    stackableItems.Add(a);
-                }
-            }
-            else
-            {
-                emptySlots.Add(i);
-            }
-        }
-
-        foreach(Item i in stackableItems)
-        {
-            int amountCanAdd = i.maxStackSize - i.amountInStack;
-            if(amountInStack <= amountCanAdd)
-            {
-                i.amountInStack += amountInStack;
-                Destroy(itemtoAdd.gameObject);
-                return;
-            }
-            else
-            {
-                i.amountInStack = i.maxStackSize;
-                amountInStack -= amountCanAdd;
-            }
-        }
-
-        itemtoAdd.amountInStack = amountInStack;
-        if(emptySlots.Count > 0)
-        {
-            itemtoAdd.transform.parent = emptySlots[0].transform;
-            itemtoAdd.gameObject.SetActive(false);
-        }
-    }
-
-    public void QuestGoal(Quest quest, int itemId, int amountInStack)
-    {
-        foreach(Quest.Items item in quest.goals.items)
-        {
-            if (itemId == item.id)
-            {
-                item.currentAmount += amountInStack;
-                UpdateUi(itemId, item.currentAmount);
-            }
-            if (item.currentAmount == item.requiredAmount)
-            {
-                itemCount++;
-                Debug.Log(itemCount);
-            }
-        }
-
-        if (itemCount == quest.goals.items.Length)
-        {
-            quest.state.complete = true;
-        }
-    }
-
-    public void UpdateUi(int itemId, int itemCurrentAmount)
-    {
-        foreach (GoalsUI goal in goalui)
-        {
-            if (goal.id == itemId.ToString())
-            {
-                goal.currentAmount = itemCurrentAmount.ToString();
-                QuestJSONController.instance.GoalsUi();
-            }
-        }
-    }
-
-    public void RemoveItem(int id, int amountToRemove)
-    {
-        foreach (Slot i in slots)
-        {
-            if (amountToRemove <= 0)
-            {
-                return;
-            }
-            if (i.slotsItem)
-            {
-                Item a = i.slotsItem;
-                if (a.itemID == id)
-                {
-                    int amountCanRemove = a.amountInStack;
-                    if (amountCanRemove <= amountToRemove)
+                    if (stack.canAdd(input.getAmount()))
                     {
-                        Destroy(a.gameObject);
-                        amountToRemove -= amountCanRemove;
+                        stack.increaseAmount(input.getAmount());
+                        return true;
                     }
                     else
                     {
-                        a.amountInStack -= amountToRemove;
-                        amountToRemove = 0;
+                        int difference = (stack.getAmount() + input.getAmount()) - stack.getItem().maxStackSize;
+                        stack.setCount(stack.getItem().maxStackSize);
+                        input.setCount(difference);
                     }
                 }
             }
         }
+        return false;
     }
+
+    public ItemStack getStackInSlot(int index)
+    {
+        return inventoryContents[index];
+    }
+
+
+    public List<ItemStack> getInventoryStacks()
+    {
+        return inventoryContents;
+    }
+
+
+    //public void QuestGoal(Quest quest, int itemId, int amountInStack)
+    //{
+    //    foreach(Quest.Items item in quest.goals.items)
+    //    {
+    //        if (itemId == item.id)
+    //        {
+    //            item.currentAmount += amountInStack;
+    //            UpdateUi(itemId, item.currentAmount);
+    //        }
+    //        if (item.currentAmount == item.requiredAmount)
+    //        {
+    //            itemCount++;
+    //            Debug.Log(itemCount);
+    //        }
+    //    }
+
+    //    if (itemCount == quest.goals.items.Length)
+    //    {
+    //        quest.state.complete = true;
+    //    }
+    //}
+
+    //public void UpdateUi(int itemId, int itemCurrentAmount)
+    //{
+    //    foreach (GoalsUI goal in goalui)
+    //    {
+    //        if (goal.id == itemId.ToString())
+    //        {
+    //            goal.currentAmount = itemCurrentAmount.ToString();
+    //            QuestJSONController.instance.GoalsUi();
+    //        }
+    //    }
+    //}
+
 
 }

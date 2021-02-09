@@ -89,7 +89,7 @@ public class NPC : MonoBehaviour
         //Quête terminer
         else if (quest.state.complete == true && quest.state.loading == true)
         {
-            GameObject.Find("InventoryManager").GetComponent<Inventory>().itemCount = 0;
+            //GameObject.Find("InventoryManager").GetComponent<Inventory>().itemCount = 0;
             questId++;
             //return QuestManager intance new id
             if (quest.dialogue.complete != null)

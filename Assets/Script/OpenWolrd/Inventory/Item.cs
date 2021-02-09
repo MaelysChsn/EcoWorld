@@ -2,27 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+
+[CreateAssetMenu(fileName = "New Item")]
+public class Item : ScriptableObject
 {
-    public Sprite itemSprite;
-
-    public int amountInStack;
-    public int maxStackSize = 5;
-
-    public int itemID;
-    public string poubelleID;
-    Inventory inventory;
-
-    public void Start()
-    {
-        inventory = GameObject.Find("InventoryManager").GetComponent<Inventory>();
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            inventory.AddItem(GetComponent<Item>());
-        }
-    }
+    public string ItemName;
+    public Sprite ItemIcon;
+    [Range(1, 20)] public int maxStackSize = 20;
 }
+   
