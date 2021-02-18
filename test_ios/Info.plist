@@ -13,7 +13,7 @@
     <key>CFBundleExecutable</key>
     <string>${EXECUTABLE_NAME}</string>
     <key>CFBundleIdentifier</key>
-    <string>${PRODUCT_BUNDLE_IDENTIFIER}</string>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
@@ -22,6 +22,29 @@
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
     <string>0.1</string>
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+        <key>CFBundleURLName</key>
+        <string>google</string>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>com.googleusercontent.apps.292704897447-srp5hknltp30ott96ohjvb08l7db46qb</string>
+        </array>
+      </dict>
+      <dict>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+        <key>CFBundleURLName</key>
+        <string>com.DefaultCompany.Ecoworld</string>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>com.DefaultCompany.Ecoworld</string>
+        </array>
+      </dict>
+    </array>
     <key>CFBundleVersion</key>
     <string>0</string>
     <key>LSRequiresIPhoneOS</key>
@@ -29,6 +52,8 @@
     <key>NSAppTransportSecurity</key>
     <dict>
       <key>NSAllowsArbitraryLoads</key>
+      <true />
+      <key>NSAllowsArbitraryLoadsInWebContent</key>
       <true />
     </dict>
     <key>UILaunchStoryboardName</key>
@@ -38,6 +63,8 @@
     <key>UILaunchStoryboardName~iphone</key>
     <string>LaunchScreen-iPhone</string>
     <key>UILaunchStoryboardName~ipod</key>
+    <string>LaunchScreen-iPhone</string>
+    <key>UIMainStoryboardFile</key>
     <string>LaunchScreen-iPhone</string>
     <key>UIPrerenderedIcon</key>
     <false />
@@ -64,8 +91,8 @@
     <key>Unity_LoadingActivityIndicatorStyle</key>
     <integer>-1</integer>
     <key>UnityCloudProjectID</key>
-    <string />
+    <string></string>
     <key>UnityCrashSubmissionURL</key>
-    <string />
+    <string></string>
   </dict>
 </plist>

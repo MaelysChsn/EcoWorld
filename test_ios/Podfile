@@ -1,0 +1,8 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '11.0'
+
+target 'UnityFramework' do
+  pod 'Firebase/Auth', '6.32.2'
+  pod 'Firebase/Core', '6.32.2'
+  pod 'Firebase/Database', '6.32.2'
+end

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -21,14 +22,19 @@ public class InventoryManager : MonoBehaviour
     private GameObject spawnedDragStack;
     private DraggedItemStack dragStack;
     private PlayerInventory player;
+    public Image background;
     private bool hasInventoryOpen = false;
+
+    public List<GoalsUI> goalui;
 
 
     private void Start()
     {
         player = FindObjectOfType<PlayerInventory>();
-        dragStack = GetComponentInChildren<DraggedItemStack>();   
+        dragStack = GetComponentInChildren<DraggedItemStack>();
+        goalui = GameObject.Find("QuestManager").GetComponent<QuestJSONController>().goalsUi;
     }
+
 
     public void Update()
     {
@@ -74,9 +80,11 @@ public class InventoryManager : MonoBehaviour
 
     public void openContainer(Container container)
     {
+        background.enabled = false;
         if (currentOpenContainer != null)
         {
             currentOpenContainer.closeContainer();
+            background.enabled = true;
         }
         currentOpenContainer = container;
         hasInventoryOpen = true;
@@ -88,9 +96,11 @@ public class InventoryManager : MonoBehaviour
 
     public void closeContainer()
     {
+        background.enabled = false;
         if (currentOpenContainer != null)
         {
             currentOpenContainer.closeContainer();
+            background.enabled = true;
         }
         hasInventoryOpen = false;
         foreach (MonoBehaviour obj in stuffToDisable)
@@ -104,10 +114,28 @@ public class InventoryManager : MonoBehaviour
         return curDraggedStack;
     }
 
+    public ItemStack removeItem()
+    {
+        return curDraggedStack;
+    }
+
     public void setDraggedItemStack(ItemStack stackIn)
     {
         dragStack.setDraggedStack(curDraggedStack = stackIn);
     }
+
+    public void UpdateUi(int itemId, int itemCurrentAmount)
+    {
+        foreach (GoalsUI goal in goalui)
+        {
+            if (goal.id == itemId.ToString())
+            {
+                goal.currentAmount = itemCurrentAmount.ToString();
+                QuestJSONController.instance.GoalsUi();
+            }
+        }
+    }
+
 }
 
 [System.Serializable]

@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerInventory : MonoBehaviour
 {
     public Item[] itemsToAdd;
     private Inventory myInventory = new Inventory(20);
+    private Button inventoryButton;
 
 
     public void Start()
@@ -14,32 +16,30 @@ public class PlayerInventory : MonoBehaviour
             myInventory.addItem(new ItemStack(item, 1));
         }
         InventoryManager.INSTANCE.resetInventoryStatus();
+
+        inventoryButton = GameObject.Find("InventoryButton").GetComponent<Button>();
+        inventoryButton.onClick.AddListener(openInventoryUI);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (other.gameObject.tag == "Item")
         {
-            if (!InventoryManager.INSTANCE.hasInventoryCurrentlyOpen())
-            {
-                InventoryManager.INSTANCE.openContainer(new ContainerPlayerInventory(null, myInventory));
-                
-            }
-            else
-            {
-                InventoryManager.INSTANCE.closeContainer();
-            }
+            myInventory.addItem(new ItemStack(other.GetComponent<ItemGameObject>().itemGameObject, 1));
+            Destroy(other.gameObject);
         }
+    }
 
-        if (Input.GetKeyDown(KeyCode.G))
+    public void openInventoryUI()
+    {
+        if (!InventoryManager.INSTANCE.hasInventoryCurrentlyOpen())
         {
-            if (!InventoryManager.INSTANCE.hasInventoryCurrentlyOpen())
-            {
-                InventoryManager.INSTANCE.closeContainer();
-            }
+            InventoryManager.INSTANCE.openContainer(new ContainerPlayerInventory(null, myInventory));
         }
-
+        else
+        {
+            InventoryManager.INSTANCE.closeContainer();
+        }
     }
 
     public Inventory getInventory()

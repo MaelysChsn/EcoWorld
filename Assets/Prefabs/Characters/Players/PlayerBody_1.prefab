@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2530657328858696533}
   - component: {fileID: 6188681319650300679}
   - component: {fileID: 6019435910764292630}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 713616937896064615}
   - component: {fileID: 2205795007456890304}
   - component: {fileID: -5898055310816780009}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlayerBody_1
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -295,13 +295,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemsToAdd:
+  - {fileID: 11400000, guid: fc75e944f60374221a45f9fa763941ad, type: 2}
+  - {fileID: 11400000, guid: fc75e944f60374221a45f9fa763941ad, type: 2}
   - {fileID: 11400000, guid: d3decd3c7c7314f53a5e78315c2a3595, type: 2}
-  - {fileID: 11400000, guid: fc75e944f60374221a45f9fa763941ad, type: 2}
-  - {fileID: 11400000, guid: fc75e944f60374221a45f9fa763941ad, type: 2}
-  - {fileID: 11400000, guid: fc75e944f60374221a45f9fa763941ad, type: 2}
-  - {fileID: 11400000, guid: fc75e944f60374221a45f9fa763941ad, type: 2}
-  - {fileID: 11400000, guid: fc75e944f60374221a45f9fa763941ad, type: 2}
-  - {fileID: 11400000, guid: fc75e944f60374221a45f9fa763941ad, type: 2}
-  - {fileID: 11400000, guid: fc75e944f60374221a45f9fa763941ad, type: 2}
-  - {fileID: 11400000, guid: fc75e944f60374221a45f9fa763941ad, type: 2}
-  - {fileID: 11400000, guid: fc75e944f60374221a45f9fa763941ad, type: 2}

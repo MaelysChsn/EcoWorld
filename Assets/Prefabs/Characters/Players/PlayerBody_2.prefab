@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8316181237991321035}
   - component: {fileID: -6640191105785486600}
   - component: {fileID: -5626262092434518241}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlayerBody_2
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -200,14 +200,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemsToAdd:
+  - {fileID: 11400000, guid: d3decd3c7c7314f53a5e78315c2a3595, type: 2}
   - {fileID: 11400000, guid: fc75e944f60374221a45f9fa763941ad, type: 2}
-  - {fileID: 11400000, guid: d3decd3c7c7314f53a5e78315c2a3595, type: 2}
-  - {fileID: 11400000, guid: d3decd3c7c7314f53a5e78315c2a3595, type: 2}
-  - {fileID: 11400000, guid: d3decd3c7c7314f53a5e78315c2a3595, type: 2}
-  - {fileID: 11400000, guid: d3decd3c7c7314f53a5e78315c2a3595, type: 2}
-  - {fileID: 11400000, guid: d3decd3c7c7314f53a5e78315c2a3595, type: 2}
-  - {fileID: 11400000, guid: d3decd3c7c7314f53a5e78315c2a3595, type: 2}
-  - {fileID: 11400000, guid: d3decd3c7c7314f53a5e78315c2a3595, type: 2}
 --- !u!1 &6000387342798692503
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,7 +214,7 @@ GameObject:
   - component: {fileID: 6453930369985941753}
   - component: {fileID: 3417344586326509739}
   - component: {fileID: 2956350393893220794}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

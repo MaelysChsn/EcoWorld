@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Apple
   ItemIcon: {fileID: 21300000, guid: cff2074e06df54190876089e6dbf29d5, type: 3}
-  maxStackSize: 5
+  maxStackSize: 4

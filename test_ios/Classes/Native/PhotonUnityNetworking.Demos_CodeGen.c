@@ -88,7 +88,7 @@ extern void Noise_grad_mF1607310497B75352E7E68D871A92867E8B06BF2 (void);
 // 0x00000022 System.Void Simplex.Noise::.ctor()
 extern void Noise__ctor_m9E8D21E95031D213644EACD555B3133FE1A2857B (void);
 // 0x00000023 System.Void Photon.Pun.Demo.WebRpcImplementationExample::OnWebRpcResponse(ExitGames.Client.Photon.OperationResponse)
-extern void WebRpcImplementationExample_OnWebRpcResponse_m1D9487773B29F45B1D187411FCB040BFF059F142 (void);
+extern void WebRpcImplementationExample_OnWebRpcResponse_m7627803D9326805E6CC91FDFC8F8CC3E258462E4 (void);
 // 0x00000024 System.Void Photon.Pun.Demo.WebRpcImplementationExample::WebRpcExampleCall()
 extern void WebRpcImplementationExample_WebRpcExampleCall_m1E0B1823A3E3F2ED92751D23398F0EB56665FE40 (void);
 // 0x00000025 System.Void Photon.Pun.Demo.WebRpcImplementationExample::WebRpcCall(System.String,System.Object,System.Boolean)
@@ -210,7 +210,7 @@ extern void PunCockpit_OnJoinedLobby_mAA1CDEEA9EC7480D407C0EC9BD1B36C3B5876D9D (
 // 0x0000005F System.Void Photon.Pun.Demo.Cockpit.PunCockpit::SetUpLobbyGenericUI()
 extern void PunCockpit_SetUpLobbyGenericUI_m2D6876BC4D1B2ADFFC951C4DB4B6E780D3B54A01 (void);
 // 0x00000060 System.Void Photon.Pun.Demo.Cockpit.PunCockpit::OnRoomPropertiesUpdate(ExitGames.Client.Photon.Hashtable)
-extern void PunCockpit_OnRoomPropertiesUpdate_m2B63D321D74453221A54F61ABE6D18584AA0C89A (void);
+extern void PunCockpit_OnRoomPropertiesUpdate_mABF3ACFF66758C2A9E7BEF4246370FE01E12DFCC (void);
 // 0x00000061 System.Void Photon.Pun.Demo.Cockpit.PunCockpit::OnLeftLobby()
 extern void PunCockpit_OnLeftLobby_mFB108293A1BB34227AE4AC1ECB4FFA8C1AAC8409 (void);
 // 0x00000062 System.Void Photon.Pun.Demo.Cockpit.PunCockpit::OnCreateRoomFailed(System.Int16,System.String)
@@ -428,7 +428,7 @@ extern void PlayerDetailsController_OnPlayerLeftRoom_m5CF1B6964CEE4C5ECA7EBFCE23
 // 0x000000CC System.Void Photon.Pun.Demo.Cockpit.PlayerDetailsController::OnMasterClientSwitched(Photon.Realtime.Player)
 extern void PlayerDetailsController_OnMasterClientSwitched_m2F7A59AE038A5DBF14A967D712D269E72FF7AF45 (void);
 // 0x000000CD System.Void Photon.Pun.Demo.Cockpit.PlayerDetailsController::OnPlayerPropertiesUpdate(Photon.Realtime.Player,ExitGames.Client.Photon.Hashtable)
-extern void PlayerDetailsController_OnPlayerPropertiesUpdate_mD4BC975C984507A4CF8551A6D618059D4D11F21F (void);
+extern void PlayerDetailsController_OnPlayerPropertiesUpdate_mEDB9CEC6A8A3CE1B2D4E27F38D1FF691BDB89E7C (void);
 // 0x000000CE System.Void Photon.Pun.Demo.Cockpit.PlayerDetailsController::OnPlayerNumberingChanged()
 extern void PlayerDetailsController_OnPlayerNumberingChanged_m2E04789F59C3B6C67BCDC870859D05E32B82A232 (void);
 // 0x000000CF System.Collections.IEnumerator Photon.Pun.Demo.Cockpit.PlayerDetailsController::UpdateUIPing()
@@ -436,7 +436,7 @@ extern void PlayerDetailsController_UpdateUIPing_mF345671A90F277C3FAAC81672E8797
 // 0x000000D0 System.Void Photon.Pun.Demo.Cockpit.PlayerDetailsController::ResetList()
 extern void PlayerDetailsController_ResetList_mD43450EF16CBE833B6AC035351B538BE976DF584 (void);
 // 0x000000D1 ExitGames.Client.Photon.Hashtable Photon.Pun.Demo.Cockpit.PlayerDetailsController::GetAllPlayerBuiltIntProperties()
-extern void PlayerDetailsController_GetAllPlayerBuiltIntProperties_m229FFCA4A69E727172D3C1A630A3DE63969116F2 (void);
+extern void PlayerDetailsController_GetAllPlayerBuiltIntProperties_mE3E1E012CB84AC84532C9F374B72E63DB43CD2D5 (void);
 // 0x000000D2 System.Void Photon.Pun.Demo.Cockpit.PlayerDetailsController::.ctor()
 extern void PlayerDetailsController__ctor_m53A54C4132AB4788E2D0ED9952335EC50C0834B0 (void);
 // 0x000000D3 System.Void Photon.Pun.Demo.Cockpit.PlayerDetailsController_<UpdateUIPing>d__24::.ctor(System.Int32)
@@ -502,7 +502,7 @@ extern void U3CUpdateUIPingU3Ed__15_System_Collections_IEnumerator_Reset_m165372
 // 0x000000F1 System.Object Photon.Pun.Demo.Cockpit.FriendListView_<UpdateUIPing>d__15::System.Collections.IEnumerator.get_Current()
 extern void U3CUpdateUIPingU3Ed__15_System_Collections_IEnumerator_get_Current_mDDC481D0307EC13AB796C015ADDAC56BBD8CB03A (void);
 // 0x000000F2 System.Void Photon.Pun.Demo.Cockpit.PlayerListCell::RefreshInfo(ExitGames.Client.Photon.Hashtable)
-extern void PlayerListCell_RefreshInfo_mB7E40AE1B1BC1B932587C4694E3F43D0EC5E36C8 (void);
+extern void PlayerListCell_RefreshInfo_m1FE71D6C350832F2C2D8010DACC437B989B60CBF (void);
 // 0x000000F3 System.Void Photon.Pun.Demo.Cockpit.PlayerListCell::AddToList(Photon.Realtime.Player,System.Boolean)
 extern void PlayerListCell_AddToList_m6E8FE9667590C4A4C71E89492B4D08F05F2F08C7 (void);
 // 0x000000F4 System.Void Photon.Pun.Demo.Cockpit.PlayerListCell::RemoveFromList()
@@ -552,7 +552,7 @@ extern void PlayerListView_OnPlayerEnteredRoom_mA70664C734B142642C8D2527C1D1F0DA
 // 0x0000010A System.Void Photon.Pun.Demo.Cockpit.PlayerListView::OnMasterClientSwitched(Photon.Realtime.Player)
 extern void PlayerListView_OnMasterClientSwitched_mCB5E25D23DB915336E557212505DEC20829F5C53 (void);
 // 0x0000010B System.Void Photon.Pun.Demo.Cockpit.PlayerListView::OnPlayerPropertiesUpdate(Photon.Realtime.Player,ExitGames.Client.Photon.Hashtable)
-extern void PlayerListView_OnPlayerPropertiesUpdate_mF47D6A43983ED3FF253FC203FE7250415E5FF650 (void);
+extern void PlayerListView_OnPlayerPropertiesUpdate_m7A291E43ADCF6C9A1AACF39BFB24F473432E0B80 (void);
 // 0x0000010C System.Void Photon.Pun.Demo.Cockpit.PlayerListView::OnPlayerLeftRoom(Photon.Realtime.Player)
 extern void PlayerListView_OnPlayerLeftRoom_m5E3FB80F13D1A65C0A23BD1AE7735A85410FCEDC (void);
 // 0x0000010D System.Void Photon.Pun.Demo.Cockpit.PlayerListView::RefreshCount()
@@ -1204,7 +1204,7 @@ extern void Cluster_UpdateRoomProperties_m371BF4D7CAD7E0A03D4A3764B6419C25069A7C
 // 0x00000250 System.Void Photon.Pun.Demo.Procedural.Cluster::RemoveClusterFromRoomProperties()
 extern void Cluster_RemoveClusterFromRoomProperties_m0B59504C6F66C930719838413F4D0BB5CF00A64B (void);
 // 0x00000251 System.Void Photon.Pun.Demo.Procedural.Cluster::OnRoomPropertiesUpdate(ExitGames.Client.Photon.Hashtable)
-extern void Cluster_OnRoomPropertiesUpdate_m9A4840E88E3F9D1B156084F929411FF2725C730E (void);
+extern void Cluster_OnRoomPropertiesUpdate_m6559BD74F5FF6BACF9D47049E376CD0F7150D7A5 (void);
 // 0x00000252 System.Void Photon.Pun.Demo.Procedural.Cluster::.ctor()
 extern void Cluster__ctor_mFCAE0E1BA65F452AB396061F1700EEDF5B01E1F1 (void);
 // 0x00000253 System.Void Photon.Pun.Demo.Procedural.IngameControlPanel::Awake()
@@ -1214,7 +1214,7 @@ extern void IngameControlPanel_OnJoinedRoom_m9D62145617515761EE13C616E77A8C6101D
 // 0x00000255 System.Void Photon.Pun.Demo.Procedural.IngameControlPanel::OnMasterClientSwitched(Photon.Realtime.Player)
 extern void IngameControlPanel_OnMasterClientSwitched_m3078A5BD674247BB7FD9A4D897FC29C9E0D974E4 (void);
 // 0x00000256 System.Void Photon.Pun.Demo.Procedural.IngameControlPanel::OnRoomPropertiesUpdate(ExitGames.Client.Photon.Hashtable)
-extern void IngameControlPanel_OnRoomPropertiesUpdate_mCED2BEF4003D157C9858929FF83FFD29C5367F2F (void);
+extern void IngameControlPanel_OnRoomPropertiesUpdate_mEF3BEB2EDB7E3748C6BD5051CB91CF31645F72C8 (void);
 // 0x00000257 System.Void Photon.Pun.Demo.Procedural.IngameControlPanel::.ctor()
 extern void IngameControlPanel__ctor_m99204E6556679A657133A8110337E52A24D1D308 (void);
 // 0x00000258 System.Void Photon.Pun.Demo.Procedural.IngameControlPanel::<Awake>b__6_0(System.String)
@@ -1348,7 +1348,7 @@ extern void AsteroidsGameManager_OnMasterClientSwitched_m938DAA2C0ADE9926863E3C0
 // 0x00000298 System.Void Photon.Pun.Demo.Asteroids.AsteroidsGameManager::OnPlayerLeftRoom(Photon.Realtime.Player)
 extern void AsteroidsGameManager_OnPlayerLeftRoom_m6DD855266AA1AD77D85054C0FF0B1546612DDBA7 (void);
 // 0x00000299 System.Void Photon.Pun.Demo.Asteroids.AsteroidsGameManager::OnPlayerPropertiesUpdate(Photon.Realtime.Player,ExitGames.Client.Photon.Hashtable)
-extern void AsteroidsGameManager_OnPlayerPropertiesUpdate_m2C348280509571FFB3751CA00B90064B12AF7FCC (void);
+extern void AsteroidsGameManager_OnPlayerPropertiesUpdate_mBC405D460E132DD64ED4658CED3E407F3C45307E (void);
 // 0x0000029A System.Void Photon.Pun.Demo.Asteroids.AsteroidsGameManager::StartGame()
 extern void AsteroidsGameManager_StartGame_m73D63444B36E1CA78BA459F2A86FF276A1CB9142 (void);
 // 0x0000029B System.Boolean Photon.Pun.Demo.Asteroids.AsteroidsGameManager::CheckAllPlayerLoadedLevel()
@@ -1402,7 +1402,7 @@ extern void PlayerOverviewPanel_Awake_m97013AE35E818E3F65AE1DFCA9AA2F1D5C3B3493 
 // 0x000002B3 System.Void Photon.Pun.Demo.Asteroids.PlayerOverviewPanel::OnPlayerLeftRoom(Photon.Realtime.Player)
 extern void PlayerOverviewPanel_OnPlayerLeftRoom_m4597BDE766F319B848AADBA51C2304CD9B81413D (void);
 // 0x000002B4 System.Void Photon.Pun.Demo.Asteroids.PlayerOverviewPanel::OnPlayerPropertiesUpdate(Photon.Realtime.Player,ExitGames.Client.Photon.Hashtable)
-extern void PlayerOverviewPanel_OnPlayerPropertiesUpdate_mB012A3B71935B751AC41C2586D7DB03ECFC5D8F2 (void);
+extern void PlayerOverviewPanel_OnPlayerPropertiesUpdate_mA8F38B5C97F4419CD6DF4D9FD5BA794229E167A7 (void);
 // 0x000002B5 System.Void Photon.Pun.Demo.Asteroids.PlayerOverviewPanel::.ctor()
 extern void PlayerOverviewPanel__ctor_m2EED0DD27BCD2E7E717E718A3359883D380AB215 (void);
 // 0x000002B6 System.Void Photon.Pun.Demo.Asteroids.Spaceship::Awake()
@@ -1443,83 +1443,85 @@ extern void LobbyMainPanel_Awake_m5910EB57F56E065568F32B56E56A81ABFD43E3EA (void
 extern void LobbyMainPanel_OnConnectedToMaster_m4AC314C5F989CA952CA9A6DEAC93F5AF8F15288C (void);
 // 0x000002C8 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnRoomListUpdate(System.Collections.Generic.List`1<Photon.Realtime.RoomInfo>)
 extern void LobbyMainPanel_OnRoomListUpdate_m20E77992F6FCBCFEEB34FC98061CC6E83CFF6121 (void);
-// 0x000002C9 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnLeftLobby()
+// 0x000002C9 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnJoinedLobby()
+extern void LobbyMainPanel_OnJoinedLobby_mF75499BA5CCEB4DDD3F5DF72FF4DDF876697D088 (void);
+// 0x000002CA System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnLeftLobby()
 extern void LobbyMainPanel_OnLeftLobby_m7ACB0EE9F6C6807FAAC0E20FAF8B2008178E62DD (void);
-// 0x000002CA System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnCreateRoomFailed(System.Int16,System.String)
+// 0x000002CB System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnCreateRoomFailed(System.Int16,System.String)
 extern void LobbyMainPanel_OnCreateRoomFailed_mCB6C14C26DDED2677EB0F31F978E4E956857A4C0 (void);
-// 0x000002CB System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnJoinRoomFailed(System.Int16,System.String)
+// 0x000002CC System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnJoinRoomFailed(System.Int16,System.String)
 extern void LobbyMainPanel_OnJoinRoomFailed_mA6DBAB0400F9AA8FC7E7FA1947A556A28BA9A51C (void);
-// 0x000002CC System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnJoinRandomFailed(System.Int16,System.String)
+// 0x000002CD System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnJoinRandomFailed(System.Int16,System.String)
 extern void LobbyMainPanel_OnJoinRandomFailed_m86371A204A9220B8511D6EEB61DF6F3903FCAD8B (void);
-// 0x000002CD System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnJoinedRoom()
+// 0x000002CE System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnJoinedRoom()
 extern void LobbyMainPanel_OnJoinedRoom_m82B366B2AC1992241B3FF4E19AB2E70B34C704D3 (void);
-// 0x000002CE System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnLeftRoom()
+// 0x000002CF System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnLeftRoom()
 extern void LobbyMainPanel_OnLeftRoom_m89ECA066AA17BDF0D2CA1496764D4C66C8B00DB2 (void);
-// 0x000002CF System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnPlayerEnteredRoom(Photon.Realtime.Player)
+// 0x000002D0 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnPlayerEnteredRoom(Photon.Realtime.Player)
 extern void LobbyMainPanel_OnPlayerEnteredRoom_m66C9D2A4A72F5E35D5A7F355B7D8D0034D176502 (void);
-// 0x000002D0 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnPlayerLeftRoom(Photon.Realtime.Player)
+// 0x000002D1 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnPlayerLeftRoom(Photon.Realtime.Player)
 extern void LobbyMainPanel_OnPlayerLeftRoom_m5DEBFCEB850D068B31BD526F420154F5415119E2 (void);
-// 0x000002D1 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnMasterClientSwitched(Photon.Realtime.Player)
+// 0x000002D2 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnMasterClientSwitched(Photon.Realtime.Player)
 extern void LobbyMainPanel_OnMasterClientSwitched_mDEFD183961E4FDECFC61031F3DB6E86E2F0881A5 (void);
-// 0x000002D2 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnPlayerPropertiesUpdate(Photon.Realtime.Player,ExitGames.Client.Photon.Hashtable)
-extern void LobbyMainPanel_OnPlayerPropertiesUpdate_m9CB52222CB946075C16BFEF492DD67ED55806AC7 (void);
-// 0x000002D3 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnBackButtonClicked()
+// 0x000002D3 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnPlayerPropertiesUpdate(Photon.Realtime.Player,ExitGames.Client.Photon.Hashtable)
+extern void LobbyMainPanel_OnPlayerPropertiesUpdate_m9A2E03B8B72B4E709A9A1E8A586176825DECD82C (void);
+// 0x000002D4 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnBackButtonClicked()
 extern void LobbyMainPanel_OnBackButtonClicked_m07A5C30BDF9BDEA693C58FB48F0B1C683AF77A74 (void);
-// 0x000002D4 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnCreateRoomButtonClicked()
+// 0x000002D5 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnCreateRoomButtonClicked()
 extern void LobbyMainPanel_OnCreateRoomButtonClicked_m4F89CFD64F9ACFDD8F44A162B9496287851BEF5A (void);
-// 0x000002D5 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnJoinRandomRoomButtonClicked()
+// 0x000002D6 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnJoinRandomRoomButtonClicked()
 extern void LobbyMainPanel_OnJoinRandomRoomButtonClicked_mCD45325D83FB39A3C67A3D5C86F08059928458AA (void);
-// 0x000002D6 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnLeaveGameButtonClicked()
+// 0x000002D7 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnLeaveGameButtonClicked()
 extern void LobbyMainPanel_OnLeaveGameButtonClicked_m55BAEB31661B1FC591726839FA55F103E65F7F7C (void);
-// 0x000002D7 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnLoginButtonClicked()
+// 0x000002D8 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnLoginButtonClicked()
 extern void LobbyMainPanel_OnLoginButtonClicked_m3B8D008292DDC9EED4346E1D0EFAAD49FFC68CED (void);
-// 0x000002D8 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnRoomListButtonClicked()
+// 0x000002D9 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnRoomListButtonClicked()
 extern void LobbyMainPanel_OnRoomListButtonClicked_mADABB9AD9C0D13B1B946318A30B075FBFE1F3992 (void);
-// 0x000002D9 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnStartGameButtonClicked()
+// 0x000002DA System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::OnStartGameButtonClicked()
 extern void LobbyMainPanel_OnStartGameButtonClicked_mF53A5EA326A758055C22D802145B20BBB4D82B2B (void);
-// 0x000002DA System.Boolean Photon.Pun.Demo.Asteroids.LobbyMainPanel::CheckPlayersReady()
+// 0x000002DB System.Boolean Photon.Pun.Demo.Asteroids.LobbyMainPanel::CheckPlayersReady()
 extern void LobbyMainPanel_CheckPlayersReady_mEDDD950F9D3A21F24CB46D2222A7116719616CE1 (void);
-// 0x000002DB System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::ClearRoomListView()
+// 0x000002DC System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::ClearRoomListView()
 extern void LobbyMainPanel_ClearRoomListView_mAEBCE9F6D1DC5C19B5D736200C7F7673B96AC929 (void);
-// 0x000002DC System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::LocalPlayerPropertiesUpdated()
+// 0x000002DD System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::LocalPlayerPropertiesUpdated()
 extern void LobbyMainPanel_LocalPlayerPropertiesUpdated_mE5F6D10BC98431813738D30D3ABAC95D2A5FBDC7 (void);
-// 0x000002DD System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::SetActivePanel(System.String)
+// 0x000002DE System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::SetActivePanel(System.String)
 extern void LobbyMainPanel_SetActivePanel_m267606A83A6543D5888201DE60A9A8256F7174E1 (void);
-// 0x000002DE System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::UpdateCachedRoomList(System.Collections.Generic.List`1<Photon.Realtime.RoomInfo>)
+// 0x000002DF System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::UpdateCachedRoomList(System.Collections.Generic.List`1<Photon.Realtime.RoomInfo>)
 extern void LobbyMainPanel_UpdateCachedRoomList_mA0DF27314A3C3D3152486B48B2AC8DE57D52F368 (void);
-// 0x000002DF System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::UpdateRoomListView()
+// 0x000002E0 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::UpdateRoomListView()
 extern void LobbyMainPanel_UpdateRoomListView_m3B2A1DCA1790C4D0C510445A35B6339BE4DAA3D2 (void);
-// 0x000002E0 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::.ctor()
+// 0x000002E1 System.Void Photon.Pun.Demo.Asteroids.LobbyMainPanel::.ctor()
 extern void LobbyMainPanel__ctor_m7D92361B25C1B17788B248F6CB486270CC93B1AC (void);
-// 0x000002E1 System.Void Photon.Pun.Demo.Asteroids.LobbyTopPanel::Update()
+// 0x000002E2 System.Void Photon.Pun.Demo.Asteroids.LobbyTopPanel::Update()
 extern void LobbyTopPanel_Update_m4CE4BBEEC9F9E43A0946F6E1155D6FFB9CA94C30 (void);
-// 0x000002E2 System.Void Photon.Pun.Demo.Asteroids.LobbyTopPanel::.ctor()
+// 0x000002E3 System.Void Photon.Pun.Demo.Asteroids.LobbyTopPanel::.ctor()
 extern void LobbyTopPanel__ctor_mB5DA8C4607011D234121240149B320E6AA9EE71B (void);
-// 0x000002E3 System.Void Photon.Pun.Demo.Asteroids.PlayerListEntry::OnEnable()
+// 0x000002E4 System.Void Photon.Pun.Demo.Asteroids.PlayerListEntry::OnEnable()
 extern void PlayerListEntry_OnEnable_m9893F230AC8C013159AC72F7E7A727272C6E269D (void);
-// 0x000002E4 System.Void Photon.Pun.Demo.Asteroids.PlayerListEntry::Start()
+// 0x000002E5 System.Void Photon.Pun.Demo.Asteroids.PlayerListEntry::Start()
 extern void PlayerListEntry_Start_mADBE7E783F1A073704DB1EC153CC19278A42A5AA (void);
-// 0x000002E5 System.Void Photon.Pun.Demo.Asteroids.PlayerListEntry::OnDisable()
+// 0x000002E6 System.Void Photon.Pun.Demo.Asteroids.PlayerListEntry::OnDisable()
 extern void PlayerListEntry_OnDisable_mB6D048157CDA3DAD78D9A17A8C8CECA525080ABF (void);
-// 0x000002E6 System.Void Photon.Pun.Demo.Asteroids.PlayerListEntry::Initialize(System.Int32,System.String)
+// 0x000002E7 System.Void Photon.Pun.Demo.Asteroids.PlayerListEntry::Initialize(System.Int32,System.String)
 extern void PlayerListEntry_Initialize_m75BB95E8E1FFB6ECFE16FB33500E2B002D8885D3 (void);
-// 0x000002E7 System.Void Photon.Pun.Demo.Asteroids.PlayerListEntry::OnPlayerNumberingChanged()
+// 0x000002E8 System.Void Photon.Pun.Demo.Asteroids.PlayerListEntry::OnPlayerNumberingChanged()
 extern void PlayerListEntry_OnPlayerNumberingChanged_m657230E38268183B769DB57ED7AE43352FD98368 (void);
-// 0x000002E8 System.Void Photon.Pun.Demo.Asteroids.PlayerListEntry::SetPlayerReady(System.Boolean)
+// 0x000002E9 System.Void Photon.Pun.Demo.Asteroids.PlayerListEntry::SetPlayerReady(System.Boolean)
 extern void PlayerListEntry_SetPlayerReady_m538036E52229E1E81D97DBEE099C8BD9C9593A4E (void);
-// 0x000002E9 System.Void Photon.Pun.Demo.Asteroids.PlayerListEntry::.ctor()
+// 0x000002EA System.Void Photon.Pun.Demo.Asteroids.PlayerListEntry::.ctor()
 extern void PlayerListEntry__ctor_mDC6CFEBBCA0C96C75F85F242DD78D21E42BFB105 (void);
-// 0x000002EA System.Void Photon.Pun.Demo.Asteroids.PlayerListEntry::<Start>b__7_0()
+// 0x000002EB System.Void Photon.Pun.Demo.Asteroids.PlayerListEntry::<Start>b__7_0()
 extern void PlayerListEntry_U3CStartU3Eb__7_0_m788581813E38D42259718164339DBB21E144DD64 (void);
-// 0x000002EB System.Void Photon.Pun.Demo.Asteroids.RoomListEntry::Start()
+// 0x000002EC System.Void Photon.Pun.Demo.Asteroids.RoomListEntry::Start()
 extern void RoomListEntry_Start_m98C14550202D0AD0A9F239FC5D4C849F1438B0CC (void);
-// 0x000002EC System.Void Photon.Pun.Demo.Asteroids.RoomListEntry::Initialize(System.String,System.Byte,System.Byte)
+// 0x000002ED System.Void Photon.Pun.Demo.Asteroids.RoomListEntry::Initialize(System.String,System.Byte,System.Byte)
 extern void RoomListEntry_Initialize_mC2F29B61254876A71810B9BAD55AE8ED5E8C44F3 (void);
-// 0x000002ED System.Void Photon.Pun.Demo.Asteroids.RoomListEntry::.ctor()
+// 0x000002EE System.Void Photon.Pun.Demo.Asteroids.RoomListEntry::.ctor()
 extern void RoomListEntry__ctor_m6E31D4F63E5B1793F77DEA0FF613785BE0DD6A35 (void);
-// 0x000002EE System.Void Photon.Pun.Demo.Asteroids.RoomListEntry::<Start>b__4_0()
+// 0x000002EF System.Void Photon.Pun.Demo.Asteroids.RoomListEntry::<Start>b__4_0()
 extern void RoomListEntry_U3CStartU3Eb__4_0_mCFD6E5F26E49F0C39440954E3FC58FD39B0DDC74 (void);
-static Il2CppMethodPointer s_methodPointers[750] = 
+static Il2CppMethodPointer s_methodPointers[751] = 
 {
 	ThirdPersonCharacter_Start_m2305111B9AC55F9EEEF2FAFAAA5D84937650C7D2,
 	ThirdPersonCharacter_Move_m82F7EBD49F4D96325565D67DCECEF38F5A4F7EF2,
@@ -1555,7 +1557,7 @@ static Il2CppMethodPointer s_methodPointers[750] =
 	Noise_grad_mB70290450B82088D7FAAD121C55321F822C8423B,
 	Noise_grad_mF1607310497B75352E7E68D871A92867E8B06BF2,
 	Noise__ctor_m9E8D21E95031D213644EACD555B3133FE1A2857B,
-	WebRpcImplementationExample_OnWebRpcResponse_m1D9487773B29F45B1D187411FCB040BFF059F142,
+	WebRpcImplementationExample_OnWebRpcResponse_m7627803D9326805E6CC91FDFC8F8CC3E258462E4,
 	WebRpcImplementationExample_WebRpcExampleCall_m1E0B1823A3E3F2ED92751D23398F0EB56665FE40,
 	WebRpcImplementationExample_WebRpcCall_m558FEB78239C64D41033156F813C4653F6797FDF,
 	WebRpcImplementationExample_OnEnable_m9F523A3C55BBEFB7F10D9EC280CE5C716890C697,
@@ -1616,7 +1618,7 @@ static Il2CppMethodPointer s_methodPointers[750] =
 	PunCockpit_OnConnectedToMaster_m31F17D2657E9AF96F4C2BDD866F2E505A9011B02,
 	PunCockpit_OnJoinedLobby_mAA1CDEEA9EC7480D407C0EC9BD1B36C3B5876D9D,
 	PunCockpit_SetUpLobbyGenericUI_m2D6876BC4D1B2ADFFC951C4DB4B6E780D3B54A01,
-	PunCockpit_OnRoomPropertiesUpdate_m2B63D321D74453221A54F61ABE6D18584AA0C89A,
+	PunCockpit_OnRoomPropertiesUpdate_mABF3ACFF66758C2A9E7BEF4246370FE01E12DFCC,
 	PunCockpit_OnLeftLobby_mFB108293A1BB34227AE4AC1ECB4FFA8C1AAC8409,
 	PunCockpit_OnCreateRoomFailed_m853C3DCD81C53056C39D19D84E13B74686943E15,
 	PunCockpit_OnJoinRandomFailed_m238C1B804AFD456C853A230998AE164BD91EF47C,
@@ -1725,11 +1727,11 @@ static Il2CppMethodPointer s_methodPointers[750] =
 	PlayerDetailsController_SetAsMaster_m3482C29EA3AB220F6FAAC088F6FD3A8347E89DDD,
 	PlayerDetailsController_OnPlayerLeftRoom_m5CF1B6964CEE4C5ECA7EBFCE23E7E8C8964BAA0F,
 	PlayerDetailsController_OnMasterClientSwitched_m2F7A59AE038A5DBF14A967D712D269E72FF7AF45,
-	PlayerDetailsController_OnPlayerPropertiesUpdate_mD4BC975C984507A4CF8551A6D618059D4D11F21F,
+	PlayerDetailsController_OnPlayerPropertiesUpdate_mEDB9CEC6A8A3CE1B2D4E27F38D1FF691BDB89E7C,
 	PlayerDetailsController_OnPlayerNumberingChanged_m2E04789F59C3B6C67BCDC870859D05E32B82A232,
 	PlayerDetailsController_UpdateUIPing_mF345671A90F277C3FAAC81672E8797E297C1FE6F,
 	PlayerDetailsController_ResetList_mD43450EF16CBE833B6AC035351B538BE976DF584,
-	PlayerDetailsController_GetAllPlayerBuiltIntProperties_m229FFCA4A69E727172D3C1A630A3DE63969116F2,
+	PlayerDetailsController_GetAllPlayerBuiltIntProperties_mE3E1E012CB84AC84532C9F374B72E63DB43CD2D5,
 	PlayerDetailsController__ctor_m53A54C4132AB4788E2D0ED9952335EC50C0834B0,
 	U3CUpdateUIPingU3Ed__24__ctor_mD8EF3235AD5AF9B012C3A0891D42323FFA192548,
 	U3CUpdateUIPingU3Ed__24_System_IDisposable_Dispose_mA2E660A97D3DEBC5FDB2EFF2A2BC813C03257925,
@@ -1762,7 +1764,7 @@ static Il2CppMethodPointer s_methodPointers[750] =
 	U3CUpdateUIPingU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m17F258487682801261DD93C100499F9F7B49552A,
 	U3CUpdateUIPingU3Ed__15_System_Collections_IEnumerator_Reset_m165372F5D1DF7F068B004460D7A17DFDBC0D5DCD,
 	U3CUpdateUIPingU3Ed__15_System_Collections_IEnumerator_get_Current_mDDC481D0307EC13AB796C015ADDAC56BBD8CB03A,
-	PlayerListCell_RefreshInfo_mB7E40AE1B1BC1B932587C4694E3F43D0EC5E36C8,
+	PlayerListCell_RefreshInfo_m1FE71D6C350832F2C2D8010DACC437B989B60CBF,
 	PlayerListCell_AddToList_m6E8FE9667590C4A4C71E89492B4D08F05F2F08C7,
 	PlayerListCell_RemoveFromList_mCE1B342623F1B2B05DB5DAD00804B98B0974BC52,
 	PlayerListCell_OnClick_mE1C91198B044F131F49CDE14256DABBD9674DDD1,
@@ -1787,7 +1789,7 @@ static Il2CppMethodPointer s_methodPointers[750] =
 	PlayerListView_SelectPlayer_m0011449CF6BE472189644B1777CA81C10607EC10,
 	PlayerListView_OnPlayerEnteredRoom_mA70664C734B142642C8D2527C1D1F0DA0C6F011B,
 	PlayerListView_OnMasterClientSwitched_mCB5E25D23DB915336E557212505DEC20829F5C53,
-	PlayerListView_OnPlayerPropertiesUpdate_mF47D6A43983ED3FF253FC203FE7250415E5FF650,
+	PlayerListView_OnPlayerPropertiesUpdate_m7A291E43ADCF6C9A1AACF39BFB24F473432E0B80,
 	PlayerListView_OnPlayerLeftRoom_m5E3FB80F13D1A65C0A23BD1AE7735A85410FCEDC,
 	PlayerListView_RefreshCount_m97D9E0D3A397640345A06AD4E1C54DFCB5058794,
 	PlayerListView_UpdateUIPing_m3240F5C9A5D5C5464D3D5C0ADBFA6F3EB9FF8392,
@@ -2113,12 +2115,12 @@ static Il2CppMethodPointer s_methodPointers[750] =
 	Cluster_SetBlockHeightLocal_m02DE46D66C8C9990B506986191CB232BCA40078C,
 	Cluster_UpdateRoomProperties_m371BF4D7CAD7E0A03D4A3764B6419C25069A7C6F,
 	Cluster_RemoveClusterFromRoomProperties_m0B59504C6F66C930719838413F4D0BB5CF00A64B,
-	Cluster_OnRoomPropertiesUpdate_m9A4840E88E3F9D1B156084F929411FF2725C730E,
+	Cluster_OnRoomPropertiesUpdate_m6559BD74F5FF6BACF9D47049E376CD0F7150D7A5,
 	Cluster__ctor_mFCAE0E1BA65F452AB396061F1700EEDF5B01E1F1,
 	IngameControlPanel_Awake_mAD238456953D791983F7C66B03324F58C5EA319C,
 	IngameControlPanel_OnJoinedRoom_m9D62145617515761EE13C616E77A8C6101D4BF35,
 	IngameControlPanel_OnMasterClientSwitched_m3078A5BD674247BB7FD9A4D897FC29C9E0D974E4,
-	IngameControlPanel_OnRoomPropertiesUpdate_mCED2BEF4003D157C9858929FF83FFD29C5367F2F,
+	IngameControlPanel_OnRoomPropertiesUpdate_mEF3BEB2EDB7E3748C6BD5051CB91CF31645F72C8,
 	IngameControlPanel__ctor_m99204E6556679A657133A8110337E52A24D1D308,
 	IngameControlPanel_U3CAwakeU3Eb__6_0_mB5A4A48B7A59ABFFCCCC508F9AAB957F3EDA76E7,
 	IngameControlPanel_U3CAwakeU3Eb__6_4_mBDA3611C8F14D855DA62629C5B6BDCB98D687B72,
@@ -2185,7 +2187,7 @@ static Il2CppMethodPointer s_methodPointers[750] =
 	AsteroidsGameManager_OnLeftRoom_m08EB0030BEA23C3704B8C4ED6FE03A6527394AD5,
 	AsteroidsGameManager_OnMasterClientSwitched_m938DAA2C0ADE9926863E3C0983399FDE47FAB00E,
 	AsteroidsGameManager_OnPlayerLeftRoom_m6DD855266AA1AD77D85054C0FF0B1546612DDBA7,
-	AsteroidsGameManager_OnPlayerPropertiesUpdate_m2C348280509571FFB3751CA00B90064B12AF7FCC,
+	AsteroidsGameManager_OnPlayerPropertiesUpdate_mBC405D460E132DD64ED4658CED3E407F3C45307E,
 	AsteroidsGameManager_StartGame_m73D63444B36E1CA78BA459F2A86FF276A1CB9142,
 	AsteroidsGameManager_CheckAllPlayerLoadedLevel_mBF1BC86E7BD0D3A0B6FC6B133C09C1A2B51D7492,
 	AsteroidsGameManager_CheckEndOfGame_mB2886912A8D9CA37903E8A50C903219E2241D270,
@@ -2212,7 +2214,7 @@ static Il2CppMethodPointer s_methodPointers[750] =
 	Bullet__ctor_m910DF818CF77ED53D499FF34F5F78F1344CD48A4,
 	PlayerOverviewPanel_Awake_m97013AE35E818E3F65AE1DFCA9AA2F1D5C3B3493,
 	PlayerOverviewPanel_OnPlayerLeftRoom_m4597BDE766F319B848AADBA51C2304CD9B81413D,
-	PlayerOverviewPanel_OnPlayerPropertiesUpdate_mB012A3B71935B751AC41C2586D7DB03ECFC5D8F2,
+	PlayerOverviewPanel_OnPlayerPropertiesUpdate_mA8F38B5C97F4419CD6DF4D9FD5BA794229E167A7,
 	PlayerOverviewPanel__ctor_m2EED0DD27BCD2E7E717E718A3359883D380AB215,
 	Spaceship_Awake_mA0DFE3306E3A3B7292A657E3CF2C2790D993BACC,
 	Spaceship_Start_m01C2CB14147F5E1AD49B2935C6E44611DB0EC197,
@@ -2233,6 +2235,7 @@ static Il2CppMethodPointer s_methodPointers[750] =
 	LobbyMainPanel_Awake_m5910EB57F56E065568F32B56E56A81ABFD43E3EA,
 	LobbyMainPanel_OnConnectedToMaster_m4AC314C5F989CA952CA9A6DEAC93F5AF8F15288C,
 	LobbyMainPanel_OnRoomListUpdate_m20E77992F6FCBCFEEB34FC98061CC6E83CFF6121,
+	LobbyMainPanel_OnJoinedLobby_mF75499BA5CCEB4DDD3F5DF72FF4DDF876697D088,
 	LobbyMainPanel_OnLeftLobby_m7ACB0EE9F6C6807FAAC0E20FAF8B2008178E62DD,
 	LobbyMainPanel_OnCreateRoomFailed_mCB6C14C26DDED2677EB0F31F978E4E956857A4C0,
 	LobbyMainPanel_OnJoinRoomFailed_mA6DBAB0400F9AA8FC7E7FA1947A556A28BA9A51C,
@@ -2242,7 +2245,7 @@ static Il2CppMethodPointer s_methodPointers[750] =
 	LobbyMainPanel_OnPlayerEnteredRoom_m66C9D2A4A72F5E35D5A7F355B7D8D0034D176502,
 	LobbyMainPanel_OnPlayerLeftRoom_m5DEBFCEB850D068B31BD526F420154F5415119E2,
 	LobbyMainPanel_OnMasterClientSwitched_mDEFD183961E4FDECFC61031F3DB6E86E2F0881A5,
-	LobbyMainPanel_OnPlayerPropertiesUpdate_m9CB52222CB946075C16BFEF492DD67ED55806AC7,
+	LobbyMainPanel_OnPlayerPropertiesUpdate_m9A2E03B8B72B4E709A9A1E8A586176825DECD82C,
 	LobbyMainPanel_OnBackButtonClicked_m07A5C30BDF9BDEA693C58FB48F0B1C683AF77A74,
 	LobbyMainPanel_OnCreateRoomButtonClicked_m4F89CFD64F9ACFDD8F44A162B9496287851BEF5A,
 	LobbyMainPanel_OnJoinRandomRoomButtonClicked_mCD45325D83FB39A3C67A3D5C86F08059928458AA,
@@ -2272,13 +2275,13 @@ static Il2CppMethodPointer s_methodPointers[750] =
 	RoomListEntry__ctor_m6E31D4F63E5B1793F77DEA0FF613785BE0DD6A35,
 	RoomListEntry_U3CStartU3Eb__4_0_mCFD6E5F26E49F0C39440954E3FC58FD39B0DDC74,
 };
-static const int32_t s_InvokerIndices[750] = 
+static const int32_t s_InvokerIndices[751] = 
 {
 	23,
-	2060,
+	2915,
 	31,
 	23,
-	1350,
+	1378,
 	23,
 	42,
 	23,
@@ -2289,24 +2292,24 @@ static const int32_t s_InvokerIndices[750] =
 	23,
 	23,
 	23,
-	2061,
-	2062,
-	2063,
-	2064,
-	2065,
-	2066,
+	2916,
+	2917,
+	2918,
+	2919,
+	2920,
+	2921,
 	3,
 	106,
 	169,
-	437,
-	438,
-	1452,
-	260,
+	440,
+	442,
+	1529,
+	261,
 	173,
-	2064,
-	2067,
-	2068,
-	2069,
+	2919,
+	2922,
+	2923,
+	2924,
 	23,
 	26,
 	23,
@@ -2348,7 +2351,7 @@ static const int32_t s_InvokerIndices[750] =
 	26,
 	26,
 	23,
-	1850,
+	2436,
 	23,
 	23,
 	23,
@@ -2371,10 +2374,10 @@ static const int32_t s_InvokerIndices[750] =
 	23,
 	26,
 	23,
-	1825,
-	1825,
+	2227,
+	2227,
 	23,
-	1825,
+	2227,
 	23,
 	14,
 	23,
@@ -2516,7 +2519,7 @@ static const int32_t s_InvokerIndices[750] =
 	23,
 	14,
 	26,
-	452,
+	456,
 	23,
 	23,
 	23,
@@ -2601,7 +2604,7 @@ static const int32_t s_InvokerIndices[750] =
 	23,
 	26,
 	23,
-	452,
+	456,
 	23,
 	14,
 	14,
@@ -2761,7 +2764,7 @@ static const int32_t s_InvokerIndices[750] =
 	23,
 	26,
 	23,
-	1825,
+	2227,
 	32,
 	23,
 	23,
@@ -2780,19 +2783,19 @@ static const int32_t s_InvokerIndices[750] =
 	26,
 	26,
 	32,
-	1832,
+	2418,
 	23,
-	1829,
-	23,
-	23,
-	26,
-	23,
-	23,
+	2415,
 	23,
 	23,
 	26,
 	23,
-	1829,
+	23,
+	23,
+	23,
+	26,
+	23,
+	2415,
 	32,
 	23,
 	14,
@@ -2811,39 +2814,39 @@ static const int32_t s_InvokerIndices[750] =
 	23,
 	23,
 	23,
-	2070,
-	2070,
-	2071,
-	2071,
-	1353,
-	1353,
-	1353,
+	2925,
+	2925,
+	2926,
+	2926,
+	1382,
+	1382,
+	1382,
 	23,
 	23,
 	89,
 	31,
 	10,
 	23,
-	2072,
-	2073,
+	2447,
+	2927,
 	37,
 	136,
 	32,
 	10,
-	1353,
-	1353,
-	1353,
+	1382,
+	1382,
+	1382,
 	23,
 	23,
 	23,
-	2074,
+	2928,
 	23,
 	23,
-	336,
+	339,
 	23,
 	23,
 	23,
-	336,
+	339,
 	23,
 	23,
 	23,
@@ -2862,9 +2865,9 @@ static const int32_t s_InvokerIndices[750] =
 	23,
 	32,
 	32,
-	1039,
-	1039,
-	1039,
+	1043,
+	1043,
+	1043,
 	23,
 	26,
 	23,
@@ -2920,7 +2923,7 @@ static const int32_t s_InvokerIndices[750] =
 	23,
 	23,
 	23,
-	2075,
+	2325,
 	23,
 	23,
 	23,
@@ -2961,7 +2964,7 @@ static const int32_t s_InvokerIndices[750] =
 	26,
 	23,
 	26,
-	2076,
+	2681,
 	23,
 	23,
 	26,
@@ -2973,7 +2976,7 @@ static const int32_t s_InvokerIndices[750] =
 	23,
 	14,
 	23,
-	2077,
+	2929,
 	23,
 	23,
 	23,
@@ -2987,9 +2990,10 @@ static const int32_t s_InvokerIndices[750] =
 	23,
 	26,
 	23,
-	1825,
-	1825,
-	1825,
+	23,
+	2227,
+	2227,
+	2227,
 	23,
 	23,
 	26,
@@ -3021,7 +3025,7 @@ static const int32_t s_InvokerIndices[750] =
 	23,
 	23,
 	23,
-	807,
+	814,
 	23,
 	23,
 };
@@ -3029,7 +3033,7 @@ extern const Il2CppCodeGenModule g_PhotonUnityNetworking_DemosCodeGenModule;
 const Il2CppCodeGenModule g_PhotonUnityNetworking_DemosCodeGenModule = 
 {
 	"PhotonUnityNetworking.Demos.dll",
-	750,
+	751,
 	s_methodPointers,
 	s_InvokerIndices,
 	0,

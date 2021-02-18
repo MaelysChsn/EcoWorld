@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NPC : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class NPC : MonoBehaviour
 
     private Quest quest;
     public LevelManager level;
+    public Button dialogueBut;
 
     GameObject player;
     GameObject npc;
@@ -20,21 +22,29 @@ public class NPC : MonoBehaviour
         level = GameObject.Find("LevelBar").GetComponent<LevelManager>();
     }
 
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
+            dialogueBut.interactable = true;
             player = other.gameObject;
             npc = this.gameObject;
-            if (QuestManager.instance.questDictionary[questId].idQuest == questId)
-            {
-                QuestDialogue(QuestManager.instance.questDictionary[questId]);
-            }
-            else
-            {
-                dialogue.Add("Je n'ai pas de nouvelle quête a te proposer mon ami !");
-                DialogueController(npc, player);
-            }
+
+            dialogueBut.onClick.AddListener(() => setQuest(player, npc));
+        }
+    }
+
+    public void setQuest(GameObject player, GameObject npc)
+    {
+        if (QuestManager.instance.questDictionary[questId].idQuest == questId)
+        {
+            QuestDialogue(QuestManager.instance.questDictionary[questId]);
+        }
+        else
+        {
+            dialogue.Add("Je n'ai pas de nouvelle quête à te proposer mon ami !");
+            DialogueController(npc, player);
         }
     }
 
@@ -43,6 +53,8 @@ public class NPC : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             dialogue.Clear();
+            dialogueBut.interactable = false;
+
         }
     }
 
@@ -68,7 +80,7 @@ public class NPC : MonoBehaviour
                 QuestJSONController.instance.ShowQuestInfo(QuestManager.instance.questDictionary[questId]);
             }
             quest.state.loading = true;
-
+            GeneratorEnemies.instance.GenerateEnemies();
             //JsonUtility.ToJson(quest);
         }
 
@@ -103,6 +115,7 @@ public class NPC : MonoBehaviour
             Debug.Log("Id Quest: " + questId);
             level.SetExp(quest.reward.experience);
             level.SetStellas(quest.reward.stellas);
+            GeneratorEnemies.instance.EnemyRemove();
         }
     }
 

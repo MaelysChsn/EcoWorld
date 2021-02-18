@@ -1,57 +1,54 @@
 ﻿{
     "id": 0,
-    "questName": "Les plantes",
-    "description": "Récupérez tout les déchets près de la rivière",
+    "questName": "La soupe du village",
+    "description": "Aller chercher des légumes frais chez l’épicier de la ville",
     "npcQuest": "0",
-    "dialogue":
-    {
+    "dialogue": {
         "begin": [
-            "J'ai besoin de créer de nouvelles potions mais je n'ai plus de plantes",
-            "Il me faut vraiment ces petites plantes pour aidé les habitants du village !",
-            "Pense tu être assez fort pour me ramener mes plantes ?"
+            "Il faut me faut absoluement de l'aide au plus vite!",
+            "En sortant de l'épicerie, des monstres de CO2 ont volé mes légumes !",
+            "Il me faut 4 tomates, 2 salades et 5 potirons. Il faudras être très vigilant !"
         ],
         "notComplete": [
-            "Tu ne m'a pas rapporter tout ce que j'avais demandé, il te reste encore du chemin à parcourir !"
+            "Ton panier n'est pas encore complet, je ne peux pas faire la soupe!"
         ],
         "complete": [
-            "Bravo tu as réussit à me rapporter mes précieuse plantes ! Tu as le droit a une belle récompence"
+            "Bravo de m'avoir apporter mes précieuse légumes ! Voici une belle récompence"
         ]
     },
     "reward": {
-        "experience": 1400,
-        "stellas": 10
+        "experience": 300,
+        "stellas": 150
     },
-    "goals":
-    {
-        "talkTo": "Botaniste",
+    "goals": {
+        "talkTo": "L’épicier",
         "items": [
             {
-                "id": 10,
-                "name": "Luzere",
+                "id": 1,
+                "name": "Tomate",
                 "sprite": "Sprite/Shop",
-                "requiredAmount": 5,
+                "requiredAmount": 4,
                 "currentAmount": 0
             },
             {
-                "id": 11,
-                "name": "Trèfles",
+                "id": 2,
+                "name": "Salades",
                 "sprite": "Sprite/Plus",
-                "requiredAmount": 7,
+                "requiredAmount": 2,
                 "currentAmount": 0
             },
             {
-                "id": 12,
-                "name": "Sainfoin",
+                "id": 3,
+                "name": "Potirons",
                 "sprite": "Sprite/Cancel",
-                "requiredAmount": 3,
+                "requiredAmount": 5,
                 "currentAmount": 0
             }
         ]
     },
-    "state":
-    {
+    "state": {
         "complete": false,
         "loading": false
     }
 }
-    
+

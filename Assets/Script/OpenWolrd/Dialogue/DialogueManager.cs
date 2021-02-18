@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject DialogueCamera;
     public Camera MainCamera;
 
+    public MonoBehaviour[] stuffToDisable;
     public string npcName;
     public GameObject npc;
     public GameObject player;
@@ -61,6 +62,11 @@ public class DialogueManager : MonoBehaviour
         this.npcName = npcName;
 
         CreateDialogue();
+
+        foreach (MonoBehaviour obj in stuffToDisable)
+        {
+            obj.enabled = false;
+        }
     }
 
     public void CreateDialogue()
@@ -88,6 +94,7 @@ public class DialogueManager : MonoBehaviour
             dialogueText.text = dialogueLines[dialogueIndex];
             StopAllCoroutines();
             StartCoroutine(TypeConversation(dialogueText.text));
+            
         }
         else
         {
@@ -99,6 +106,10 @@ public class DialogueManager : MonoBehaviour
             GameObject.FindWithTag("MainCamera").transform.rotation = Quaternion.Euler(12.796f, 0f, 0f);
             targetGroup.RemoveMember(npc.transform);
             targetGroup.RemoveMember(player.transform);
+            foreach (MonoBehaviour obj in stuffToDisable)
+            {
+                obj.enabled = true;
+            }
         }
     }
 

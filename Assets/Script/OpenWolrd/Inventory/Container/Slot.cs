@@ -29,7 +29,7 @@ public class Slot : MonoBehaviour, IPointerDownHandler
         {
             itemIcon.enabled = true;
             itemIcon.sprite = myStack.getItem().ItemIcon;
-            if(myStack.getAmount() > 1)
+            if (myStack.getAmount() > 1)
             {
                 itemAmount.text = myStack.getAmount().ToString();
             }
@@ -53,16 +53,15 @@ public class Slot : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-
         ItemStack curDraggedStack = inventoryManager.getDraggedItemStack();
         ItemStack stackCopy = myStack.copy();
-        if(eventData.pointerId == -1)
+        if (eventData.pointerId == 0 || eventData.pointerId == -1)
         {
-            onLeftClick(curDraggedStack, stackCopy);
+            onTouch(curDraggedStack, stackCopy);
         }
     }
 
-    private void onLeftClick(ItemStack curDraggedStack, ItemStack stackCopy)
+    private void onTouch(ItemStack curDraggedStack, ItemStack stackCopy)
     {
         if (!myStack.isEmpty() && curDraggedStack.isEmpty())
         {
@@ -105,30 +104,4 @@ public class Slot : MonoBehaviour, IPointerDownHandler
             }
         }
     }
-
-    //public void GetIdPoubelle(string idPoubelle)
-    //{
-    //    IdPoubelle = idPoubelle;
-    //}
-
-    //public void OnSelectedSlot()
-    //{
-    //    removeButton = GameObject.Find("ItemRemoveBut").GetComponent<Button>();
-
-    //    if (slotsItem != null)
-    //    {
-    //        removeButton.interactable = true;
-    //        idItem = slotsItem.poubelleID;
-    //        Debug.Log("slot id " + slotsItem.itemID + " amount " + slotsItem.amountInStack);
-    //        removeButton.onClick.AddListener(() => {
-    //            inventory.RemoveItem(slotsItem.itemID, slotsItem.amountInStack);
-    //            level.SetExp(1200);
-    //        });
-    //    }
-    //    else
-    //    {
-    //        removeButton.interactable = false;
-    //    }
-
-    //}
 }
