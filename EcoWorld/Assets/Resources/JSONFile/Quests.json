@@ -1,0 +1,93 @@
+﻿{
+    "id": 0,
+    "questName": "La soupe du village",
+    "description": "Aller chercher des légumes frais chez l’épicier de la ville",
+    "npcQuest": "0",
+    "dialogue": {
+        "begin": [
+            "Il faut me faut absoluement de l'aide au plus vite!",
+            "En sortant de l'épicerie, des monstres de CO2 ont volé mes légumes !",
+            "Il me faut 4 tomates, 2 salades et 5 potirons. Il faudras être très vigilant !"
+        ],
+        "notComplete": [
+            "Ton panier n'est pas encore complet, je ne peux pas faire la soupe!"
+        ],
+        "complete": [
+            "Bravo de m'avoir apporter mes précieuse légumes ! Voici une belle récompence"
+        ]
+    },
+    "reward": {
+        "experience": 300,
+        "stellas": 150
+    },
+    "goals": {
+        "talkTo": "L’épicier",
+        "items": [
+            {
+                "id": 1,
+                "name": "Tomate",
+                "sprite": "Sprite/Shop",
+                "requiredAmount": 4,
+                "currentAmount": 0
+            },
+            {
+                "id": 2,
+                "name": "Salades",
+                "sprite": "Sprite/Plus",
+                "requiredAmount": 2,
+                "currentAmount": 0
+            },
+            {
+                "id": 3,
+                "name": "Potirons",
+                "sprite": "Sprite/Cancel",
+                "requiredAmount": 5,
+                "currentAmount": 0
+            }
+        ]
+    },
+    "state": {
+        "complete": false,
+        "loading": false
+    }
+};
+
+{
+    "id": 1,
+    "questName": "La miel d'abeille",
+    "description": "Aller chercher 15 pots de miel chez Bob l’agriculteur près de la rivière",
+    "npcQuest": "0",
+    "dialogue": {
+        "begin": [
+            "Il faut me faut absoluement de l'aide au plus vite!",
+            "Ce matin, Climator a volé mes pots de miel. Je n’ai donc plus rien à manger : je meurs de faim !",
+            "Si je compte bien, 15 pots de miel me suffiront!"
+        ],
+        "notComplete": [
+            "Ton panier n'est pas encore complet, je n'ai pas assez de miel!"
+        ],
+        "complete": [
+            "Bravo de m'avoir apporter mes précieux pots de miel ! Voici une belle récompence"
+        ]
+    },
+    "reward": {
+        "experience": 300,
+        "stellas": 150
+    },
+    "goals": {
+        "talkTo": "Bob",
+        "items": [
+            {
+                "id": 6,
+                "name": "Pot de miel",
+                "sprite": "Sprite/Shop",
+                "requiredAmount": 15,
+                "currentAmount": 0
+            }
+        ]
+    },
+    "state": {
+        "complete": false,
+        "loading": false
+    }
+}

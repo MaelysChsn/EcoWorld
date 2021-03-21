@@ -1,0 +1,2 @@
+/Users/Maelys/Documents/GitHub/EcoWorld/Ecoworld/obj/Debug/HalfFloatASMDEF.csprojAssemblyReference.cache
+/Users/Maelys/Documents/GitHub/EcoWorld/Ecoworld/obj/Debug/HalfFloatASMDEF.csproj.CoreCompileInputs.cache

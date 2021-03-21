@@ -1,0 +1,7 @@
+<projectSettings>
+  <projectSetting name="com.google.firebaseAnalyticsCookie" value="fb6b27d2fa9946bca3f801d879b6bd57" />
+  <projectSetting name="com.google.firebaseAnalyticsEnabled" value="True" />
+  <projectSetting name="Google.IOSResolver.VerboseLoggingEnabled" value="False" />
+  <projectSetting name="Google.PackageManagerResolver.VerboseLoggingEnabled" value="False" />
+  <projectSetting name="Google.VersionHandler.VerboseLoggingEnabled" value="False" />
+</projectSettings>
