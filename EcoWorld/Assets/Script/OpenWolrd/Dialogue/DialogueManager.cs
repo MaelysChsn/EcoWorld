@@ -53,13 +53,8 @@ public class DialogueManager : MonoBehaviour
     public void AddNewDialogue(List<string> lines, string npcName)
     {
         dialogueIndex = 0;
-        dialogueLines = new List<string>(lines.Capacity);
+        dialogueLines = new List<string>();
         dialogueLines.AddRange(lines);
-
-        foreach(string line in lines)
-        {
-            dialogueLines.Add(line);
-        }
         this.npcName = npcName;
 
         CreateDialogue();
@@ -85,6 +80,10 @@ public class DialogueManager : MonoBehaviour
         this.player = player;
         DialogueCamera.SetActive(true);
 
+        DialogueCamera.GetComponent<CinemachineVirtualCamera>().LookAt = npc.transform;
+        DialogueCamera.GetComponent<CinemachineVirtualCamera>().m_Lens.LensShift.x = -0.07f;
+        DialogueCamera.GetComponent<CinemachineVirtualCamera>().m_Lens.LensShift.y = -0.02f;
+
         targetGroup.AddMember(npc.transform, 1f, 1f);
         targetGroup.AddMember(player.transform, 1f, 1f);
     }
@@ -106,8 +105,9 @@ public class DialogueManager : MonoBehaviour
             DialogueCamera.SetActive(false);
 
             player.GetComponent<NPC>().dialogue.Clear();
+
             MainCamera.fieldOfView = 60.0f;
-            MainCamera.GetComponent<PlayerFollow>()._cameraOffset = new Vector3(-0.26f, 3.35f, -5.75f);
+            MainCamera.GetComponent<PlayerFollow>()._cameraOffset = new Vector3(-0.05f, 3.7f, -9f);
             GameObject.FindWithTag("MainCamera").transform.rotation = Quaternion.Euler(12.796f, 0f, 0f);
             targetGroup.RemoveMember(npc.transform);
             targetGroup.RemoveMember(player.transform);

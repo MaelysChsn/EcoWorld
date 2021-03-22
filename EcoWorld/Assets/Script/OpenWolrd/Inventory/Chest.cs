@@ -17,12 +17,17 @@ public class Chest : MonoBehaviour
     public Image background;
     public GameObject closeButton;
 
+    public void Awake()
+    {
+        closeButton = GameObject.Find("InventoryCloseButton");
+        print(closeButton);
+    }
 
     public void Start()
     {
         player = FindObjectOfType<PlayerInventory>();
         inventoryManager = InventoryManager.INSTANCE;
-        closeButton.SetActive(false);
+
         background.enabled = false;
     }
 
@@ -41,9 +46,10 @@ public class Chest : MonoBehaviour
         gameObject.GetComponent<Animation>().Play("OpenChest");
         if (!inventoryManager.hasInventoryCurrentlyOpen())
         {
-
             background.enabled = true;
+
             inventoryManager.openContainer(new ContainerChest(inventory, player.getInventory()));
+            closeButton.GetComponent<Button>().onClick.AddListener(CloseChest);
             closeButton.SetActive(true);
         }
 
@@ -53,8 +59,9 @@ public class Chest : MonoBehaviour
     {
         inventoryManager.closeContainer();
 
-        background.enabled = false;
         closeButton.SetActive(false);
+        background.enabled = false;
+        closeButton.GetComponent<Button>().onClick.RemoveListener(CloseChest);
         gameObject.GetComponent<Animation>().Play("CloseChest");
     }
 

@@ -21,10 +21,7 @@ public class Poubelle : MonoBehaviour
         player = FindObjectOfType<PlayerInventory>();
         inventoryManager = InventoryManager.INSTANCE;
 
-
         background.enabled = false;
-
-        closeButton.SetActive(false);
     }
 
 
@@ -46,6 +43,7 @@ public class Poubelle : MonoBehaviour
         if (!inventoryManager.hasInventoryCurrentlyOpen())
         {
             background.enabled = true;
+            closeButton.GetComponent<Button>().onClick.AddListener(ClosePoubelle);
             inventoryManager.openContainer(new ContainerTrash(inventory, player.getInventory()));
             closeButton.SetActive(true);
         }
@@ -57,6 +55,7 @@ public class Poubelle : MonoBehaviour
 
         background.enabled = false;
         closeButton.SetActive(false);
+        closeButton.GetComponent<Button>().onClick.RemoveListener(ClosePoubelle);
         gameObject.GetComponent<Animation>().Play("PoubClose");
     }
 

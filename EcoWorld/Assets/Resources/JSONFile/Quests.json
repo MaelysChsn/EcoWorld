@@ -26,21 +26,21 @@
             {
                 "id": 1,
                 "name": "Tomate",
-                "sprite": "Sprite/Shop",
+                "sprite": "Sprite/tomate",
                 "requiredAmount": 4,
                 "currentAmount": 0
             },
             {
                 "id": 2,
                 "name": "Salades",
-                "sprite": "Sprite/Plus",
+                "sprite": "Sprite/salade",
                 "requiredAmount": 2,
                 "currentAmount": 0
             },
             {
                 "id": 3,
                 "name": "Potirons",
-                "sprite": "Sprite/Cancel",
+                "sprite": "Sprite/citrouille",
                 "requiredAmount": 5,
                 "currentAmount": 0
             }
@@ -80,7 +80,7 @@
             {
                 "id": 6,
                 "name": "Pot de miel",
-                "sprite": "Sprite/Shop",
+                "sprite": "Sprite/pot_miel",
                 "requiredAmount": 15,
                 "currentAmount": 0
             }

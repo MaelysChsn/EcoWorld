@@ -22,7 +22,6 @@ public class PhotonManager : MonoBehaviourPun
         if (PhotonNetwork.IsConnected)
         {
             SpawnPlayer();
-            BeginPanel.SetActive(true);
         }
     }
 

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Potirons
   ItemID: 3
-  ItemIcon: {fileID: 21300000, guid: 7c34b0ecb12224eb88343135a587bfb1, type: 3}
+  ItemIcon: {fileID: 21300000, guid: 576e6e97613f047568fe40c6ec2a1f76, type: 3}
   maxStackSize: 1

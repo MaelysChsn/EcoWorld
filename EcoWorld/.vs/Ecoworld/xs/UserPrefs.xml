@@ -1,20 +1,22 @@
-﻿<Properties StartupConfiguration="{F2E888E6-8F5D-21AF-E154-106CDCB21124}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/OpenWolrd/Quêtes/Villager.cs">
+﻿<Properties StartupConfiguration="{F735A307-2F5B-9813-4DEE-571B9AA6FBC1}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/OpenWolrd/Dialogue/DialogueManager.cs">
     <Files>
-      <File FileName="Assets/Script/OpenWolrd/SceneManager/PhotonManager.cs" Line="25" Column="40" />
-      <File FileName="Assets/Script/OpenWolrd/Dialogue/DialogueManager.cs" />
-      <File FileName="Assets/Script/OpenWolrd/Inventory/Item/DraggedItemStack.cs" />
+      <File FileName="Assets/Script/OpenWolrd/SceneManager/PhotonManager.cs" Line="24" Column="27" />
+      <File FileName="Assets/Script/OpenWolrd/Dialogue/DialogueManager.cs" Line="112" Column="53" />
+      <File FileName="Assets/Script/OpenWolrd/Inventory/Item/DraggedItemStack.cs" Line="1" Column="1" />
       <File FileName="Assets/Script/OpenWolrd/player/CharacterManager.cs" />
       <File FileName="Assets/Script/OpenWolrd/player/PlayerFollow.cs" />
       <File FileName="Assets/Script/OpenWolrd/Inventory/InventoryManager.cs" />
       <File FileName="Assets/Script/OpenWolrd/Inventory/Inventory.cs" />
       <File FileName="Assets/Script/OpenWolrd/Inventory/Container/ContainerPlayerInventory.cs" />
-      <File FileName="Assets/Script/OpenWolrd/Inventory/Chest.cs" Line="62" Column="6" NotebookId="1" IsPinned="True" />
-      <File FileName="Assets/Script/OpenWolrd/player/PlayerInventory.cs" NotebookId="1" />
-      <File FileName="Assets/Script/OpenWolrd/Inventory/Poubelle.cs" NotebookId="1" />
-      <File FileName="Assets/Script/OpenWolrd/player/PlayerMouvement.cs" NotebookId="1" />
-      <File FileName="Assets/Script/OpenWolrd/Dialogue/NPC.cs" Line="58" Column="10" NotebookId="1" />
-      <File FileName="Assets/Script/OpenWolrd/Quêtes/Villager.cs" Line="27" Column="26" NotebookId="1" />
+      <File FileName="Assets/Script/OpenWolrd/Quêtes/Villager.cs" Line="34" Column="67" />
+      <File FileName="Assets/Script/OpenWolrd/Inventory/Chest.cs" Line="52" Column="13" NotebookId="1" IsPinned="True" />
+      <File FileName="Assets/Script/OpenWolrd/Dialogue/NPC.cs" Line="67" Column="9" NotebookId="1" IsPinned="True" />
+      <File FileName="Assets/Script/OpenWolrd/player/PlayerInventory.cs" Line="62" Column="38" NotebookId="1" />
+      <File FileName="Assets/Script/OpenWolrd/Inventory/Poubelle.cs" Line="58" Column="58" NotebookId="1" />
+      <File FileName="Assets/Script/OpenWolrd/player/PlayerMouvement.cs" Line="36" Column="10" NotebookId="1" />
+      <File FileName="Assets/Script/OpenWolrd/SceneManager/BeginGame.cs" Line="25" Column="28" NotebookId="1" />
+      <File FileName="Assets/Resources/JSONFile/Quests.json" Line="54" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,15 +25,15 @@
             <Node name="Assets" expanded="True">
               <Node name="Script" expanded="True">
                 <Node name="OpenWolrd" expanded="True">
-                  <Node name="Dialogue" expanded="True" />
+                  <Node name="Dialogue" expanded="True">
+                    <Node name="DialogueManager.cs" selected="True" />
+                  </Node>
                   <Node name="Inventory" expanded="True">
                     <Node name="Container" expanded="True" />
                     <Node name="Item" expanded="True" />
                   </Node>
                   <Node name="player" expanded="True" />
-                  <Node name="Quêtes" expanded="True">
-                    <Node name="Villager.cs" selected="True" />
-                  </Node>
+                  <Node name="Quêtes" expanded="True" />
                   <Node name="SceneManager" expanded="True" />
                 </Node>
               </Node>
@@ -43,7 +45,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8ba936ec-b97f-45d6-aac6-534ab8462197" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a9a5fabe-0999-457a-851e-95007492a202" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

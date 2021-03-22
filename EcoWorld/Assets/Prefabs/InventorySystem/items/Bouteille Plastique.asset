@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Bouteille Plastique
   ItemID: 7
-  ItemIcon: {fileID: 21300000, guid: 54628aafa20f64b40ae661038ee7abf0, type: 3}
-  maxStackSize: 1
+  ItemIcon: {fileID: 21300000, guid: 654cd7c66a6fa4216825da9c61916467, type: 3}
+  maxStackSize: 3

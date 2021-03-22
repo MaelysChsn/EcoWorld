@@ -19,13 +19,9 @@ public class BeginGame : MonoBehaviour
     public TMP_Text dialogueText;
     int dialogueIndex;
 
-    void Awake()
-    {
-        continueButton.onClick.AddListener(delegate { ContinueDialogue(); });
-    }
-
     public void Start()
     {
+        continueButton.onClick.AddListener(delegate { ContinueDialogue(); });
         setBeginDialogue();
     }
 
@@ -42,13 +38,8 @@ public class BeginGame : MonoBehaviour
     public void AddNewDialogue(List<string> lines)
     {
         dialogueIndex = 0;
-        dialogueLines = new List<string>(4);
+        dialogueLines = new List<string>();
         dialogueLines.AddRange(lines);
-
-        foreach (string line in lines)
-        {
-            dialogueLines.Add(line);
-        }
         CreateDialogue();
 
         foreach (MonoBehaviour obj in stuffToDisable)

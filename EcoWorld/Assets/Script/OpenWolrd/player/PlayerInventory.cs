@@ -10,8 +10,22 @@ public class PlayerInventory : MonoBehaviour
     public Button inventoryCloseButton;
     public GameObject closeButton;
 
-    public GameObject background;
+    public Image background;
 
+    public void Awake()
+    {
+        inventoryOpenButton = GameObject.Find("InventoryOpenButton").GetComponent<Button>();
+        inventoryOpenButton.onClick.AddListener(openInventoryUI);
+
+        inventoryCloseButton = GameObject.Find("InventoryCloseButton").GetComponent<Button>();
+        inventoryCloseButton.onClick.AddListener(closeInventoryUI);
+
+        closeButton = GameObject.Find("InventoryCloseButton");
+        background = closeButton.transform.GetComponentInParent<Image>();
+
+        background.enabled = false;
+        closeButton.SetActive(false);
+    }
 
     public void Start()
     {
@@ -20,17 +34,7 @@ public class PlayerInventory : MonoBehaviour
             myInventory.addItem(new ItemStack(item, 1));
         }
         InventoryManager.INSTANCE.resetInventoryStatus();
-
-        inventoryOpenButton = GameObject.Find("InventoryOpenButton").GetComponent<Button>();
-        inventoryOpenButton.onClick.AddListener(openInventoryUI);
-
-        inventoryCloseButton = GameObject.FindWithTag("CloseButton").GetComponent<Button>();
-        inventoryCloseButton.onClick.AddListener(closeInventoryUI);
-
-        closeButton = GameObject.FindWithTag("CloseButton");
-        gameObject.transform.GetComponentInParent<Image>().enabled = false;
-
-        closeButton.SetActive(false);
+        
     }
 
     //Ajout d'item en le ramassant
@@ -46,16 +50,18 @@ public class PlayerInventory : MonoBehaviour
     //Ouverture d'inventaire
     public void openInventoryUI()
     {
-        gameObject.transform.GetComponentInParent<Image>().enabled = true;
         InventoryManager.INSTANCE.openContainer(new ContainerPlayerInventory(null, myInventory));
         closeButton.SetActive(true);
+        background.enabled = true;
+        closeButton.GetComponent<Button>().onClick.AddListener(closeInventoryUI);
     }
 
     public void closeInventoryUI()
     {
         InventoryManager.INSTANCE.closeContainer();
-        gameObject.transform.GetComponentInParent<Image>().enabled = false;
         closeButton.SetActive(false);
+        background.enabled = false;
+        closeButton.GetComponent<Button>().onClick.RemoveListener(closeInventoryUI);
     }
 
     //Récupération de la class Inventory

@@ -30,10 +30,10 @@ public class NPC : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             dialogueBut.SetActive(true);
-            dialogueBut.GetComponent<Animation>().Play("Button");
             player = other.gameObject;
             npc = this.gameObject;
 
+            dialogueBut.GetComponent<Animation>().Play();
             dialogueBut.GetComponent<Button>().onClick.AddListener(() => setQuest(player, npc));
         }
     }

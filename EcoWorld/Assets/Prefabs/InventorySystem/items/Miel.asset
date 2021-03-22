@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Miel
   ItemID: 6
-  ItemIcon: {fileID: 21300000, guid: 36abed496fd744f97a71c25c6cd31f46, type: 3}
-  maxStackSize: 1
+  ItemIcon: {fileID: 21300000, guid: be5b2eb4f3d4b40839c578acf208ea98, type: 3}
+  maxStackSize: 5

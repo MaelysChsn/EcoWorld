@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Bouteille Verre
   ItemID: 4
-  ItemIcon: {fileID: 21300000, guid: f054197ef28924b4986cbd91de2ab054, type: 3}
-  maxStackSize: 1
+  ItemIcon: {fileID: 21300000, guid: 10c1c425969a5442484f1cc654fda076, type: 3}
+  maxStackSize: 3
